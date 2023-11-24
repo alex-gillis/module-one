@@ -5,9 +5,35 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css" />
         <script src="scripts.js"></script>
-        <title>Module One</title>
+        <title>Scavenging Module One</title>
     </head>
     <body>
-        <h1>MODULE ONE</h1>
+        <!--<div class="reference">Imagery</div>-->
+        <div class="journal">
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting 
+                industry. Lorem Ipsum has been the industry's standard dummy text 
+                ever since the 1500s, when an unknown printer took a galley of 
+                type and scrambled it to make a type specimen book. It has 
+                survived not only five centuries, but also the leap into 
+                electronic typesetting, remaining essentially unchanged. 
+            </p>
+            <div>
+                <p id="demo" onclick="myFunction()" class="choices">1. Choice</p>
+                <p id="demo" onclick="myFunction()" class="choices">2. Choice</p>
+                <p id="demo" onclick="myFunction()" class="choices">3. Choice</p>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="menu__settings">Game Settings</div>
+            <div class="menu__stats">Character Statistics</div>
+        </div>
+
+        <script>
+            function myFunction() {
+              document.getElementById("demo").innerHTML = "YOU CLICKED ME!";
+            }
+        </script>
+
     </body>
 </html>
