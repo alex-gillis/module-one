@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="/css/style.css" />
         <script src="scripts.js"></script>
         <title>Scavenging Module One</title>
     </head>
@@ -27,7 +27,12 @@
         </div>
         <div class="menu">
             <div class="menu__settings">Game Settings</div>
-            <div class="menu__stats">Character Statistics</div>
+            <div class="menu__stats">
+                Character Statistics
+                <footer>
+                    <%- include('../partials/footer'); %>
+                </footer>
+            </div>
         </div>
 
         <script>
