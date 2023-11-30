@@ -18,18 +18,18 @@
             </div>
         </div>
         <div class="menu">
-            <div class="menu__settings">Game Settings</div>
+            <div class="menu__settings">
+                <%- include('../partials/settings'); %>
+            </div>
             <div class="menu__stats">
-                Character Statistics
-                <footer>
-                    <%- include('../partials/footer'); %>
-                </footer>
+                <%- include('../partials/stats'); %>
+                <%- include('../partials/footer'); %>
             </div>
         </div>
 
         <script>
             function myFunction() {
-              document.getElementById("demo").innerHTML = "YOU CLICKED ME!";
+                document.getElementById("demo").innerHTML = "YOU MADE YOUR CHOICE!";
             }
         </script>
 

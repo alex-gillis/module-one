@@ -8,9 +8,9 @@ app.set('view engine', 'ejs');
 
 app.get('/', function(req, res) {
     res.render('pages/index');
-    console.log(`Loaded!`);
   });
 
 app.listen(PORT, () => {
     console.log(`App listening on ${PORT}`);
+    console.log(`http://localhost:8060`);
 })
