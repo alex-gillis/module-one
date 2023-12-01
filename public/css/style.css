@@ -37,13 +37,19 @@ body {
 .menu__settings {
     height: 25%;}
 .menu__stats {
-    height: 65%; }
+    height: 70%; }
 .menu__links {
-    height: 10%; }
+    height: 2%; }
 
 a:link {
     color: rgb(0, 110, 255);
     text-decoration: none; }
 a:visited {
-    color: rgb(0, 110, 255);
-}
+    color: rgb(0, 110, 255); }
+
+.hud{
+    font-size: 15px; }
+.hud__health{
+    color:red; }
+.hud__oxygen{
+    color: aqua; }
