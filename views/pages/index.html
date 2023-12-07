@@ -3,14 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/public/css/style.css" />
-        <script src="scripts.js"></script>
+        <link rel="stylesheet" href="/public/css/style.css" /> 
         <title>Scavenging Module One</title>
     </head>
     <body>
         <!--<div class="reference">Imagery</div>-->
         <div class="journal">
-            <p class="typing">
+            <p class="story">
                 It's the year 2122. The specific time of year holds little significance, 
                 especially when you're light-years away from any weather to experience. 
                 You're a scavenger—an explorer of abandoned wrecks, seeking anything of 
@@ -31,10 +30,8 @@
                 <br> <br>
                 For you, there seems to be only one viable option...
             </p>
-            <div>
-                <p id="demo" onclick="logMovies()" class="choices">1. Choice</p>
-                <p id="demo" onclick="myFunction()" class="choices">2. Choice</p>
-                <p id="demo" onclick="myFunction()" class="choices">3. Choice</p>
+            <div class="choices">
+                <p id="demo" onclick="myFunction()" class="choice">Proceed</p>
             </div>
         </div>
         <div class="menu">
@@ -59,13 +56,7 @@
                     <p class="text-center text-muted"><a href="https://github.com/alex-gillis">Github</a></p>
                 </footer> 
             </div>
-        </div>
-
-        <script>
-            function myFunction() {
-                document.getElementById("demo").innerHTML = "YOU MADE YOUR CHOICE!";
-            }
-        </script>
-
+        </div> 
+        <script type="text/javascript" src="/scripts.js"></script>  
     </body>
 </html>
