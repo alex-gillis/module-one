@@ -1,13 +1,15 @@
-const pages = require('./moduleOne.json');
-console.log(pages);
-
 // test function
 function myFunction() {
     document.getElementById("demo").innerHTML = "YOU MADE YOUR CHOICE!";
 }
 
-function main() {
-    console.log(pages[0].story)
+function getJSONData(retrieveScript, success, failure) {
+    fetch(retrieveScript)
+        .then(response => response.json())
+        .then(jsonData => success(jsonData))
+        .catch(err => failure());
 }
 
-main();
+function onError() {
+    console.log("*** Error has occured during AJAX data transmission");
+}

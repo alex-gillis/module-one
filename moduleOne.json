@@ -1,20 +1,28 @@
 {
-  "pages": [{
-    "page-num": 1,
-    "story": "Shaking off the haunting thoughts of debt collectors who might decide that galactic standard time isn't the same in this sector, you resolve to seize the opportunity while it's still available. With determination fueling your actions, you initiate the hyperspace sequence, feeling the familiar hum of your ship's engines as you propel yourself towards the abandoned station. The race is on, and you're determined to get there before a swarm of scavengers beat you to the potential treasure trove.    </br>Bringing the ship into hyperdrive, you leave V.I. to mind the controls. Your biggest advantage, operating solo, lies in the speed and reaction time you can afford. In a profession flooded with opportunists and a constant influx of wrecks appearing in the sector, agility is your key to staying ahead. The need for speed has become a constant companion, making the ritual of checking equipment before emerging for work a well-practiced routine. As the stars streak into lines of light, you focus on the task ahead, eager to beat the competition to the secrets that the abandoned station may hold.   </br>Going over your equipment, you start with what has practically become like a second skin—the trusty space suit. You're always careful with the image link hooked into the helmet. This link goes straight to V.I. back on the ship, allowing her to feed you real-time information and values of the scrap you're eyeing for salvage. But don't think the only time pressure you have is your competition; no, you also have to contend with your greatest weakness as a spacer—your need for oxygen.   </br>bIn the silent expanse of space, where every breath is measured and every second counts, the reliable hiss of your life support system becomes a comforting symphony. It's a reminder that, as much as you're racing against rival scavengers, you're also racing against the ticking clock of your own air supply. A glance at the suit's gauge tells you that you have only a limited time before you must return to the safety of your ship. Time is of the essence, and with a deep breath, you prepare to embark on another perilous journey into the unknown.",
-    "choices":[{
-      "option":"Proceed",
-      "next-page":2
-    }]
-  },{
-    "page-num": 2,
-    "story": "",
-    "choices":[{
-      "option":"Land in the hanger bay",
-      "next-page":2
-    },{
-      "option":"Look for a maintenance hatch to enter",
-      "next-page":3
-    }]
-  }]
+  "pages": [
+    {
+      "page-num": 1,
+      "story": "Shaking off the haunting thoughts of debt collectors who might decide that galactic standard time isn't the same in this sector, you resolve to seize the opportunity while it's still available. With determination fueling your actions, you initiate the hyperspace sequence, feeling the familiar hum of your ship's engines as you propel yourself towards the abandoned station. The race is on, and you're determined to get there before a swarm of scavengers beat you to the potential treasure trove.</br>Bringing the ship into hyperdrive, you leave V.I. to mind the controls. Your biggest advantage, operating solo, lies in the speed and reaction time you can afford. In a profession flooded with opportunists and a constant influx of wrecks appearing in the sector, agility is your key to staying ahead. The need for speed has become a constant companion, making the ritual of checking equipment before emerging for work a well-practiced routine. As the stars streak into lines of light, you focus on the task ahead, eager to beat the competition to the secrets that the abandoned station may hold.</br>Going over your equipment, you start with what has practically become like a second skin—the trusty space suit. You're always careful with the image link hooked into the helmet. This link goes straight to V.I. back on the ship, allowing her to feed you real-time information and values of the scrap you're eyeing for salvage. But don't think the only time pressure you have is your competition; no, you also have to contend with your greatest weakness as a spacer—your need for oxygen.</br>In the silent expanse of space, where every breath is measured and every second counts, the reliable hiss of your life support system becomes a comforting symphony. It's a reminder that, as much as you're racing against rival scavengers, you're also racing against the ticking clock of your own air supply. A glance at the suit's gauge tells you that you have only a limited time before you must return to the safety of your ship. Time is of the essence, and with a deep breath, you prepare to embark on another perilous journey into the unknown.",
+      "choices": [
+        {
+          "option": "Proceed",
+          "next-page": 2
+        }
+      ]
+    },
+    {
+      "page-num": 2,
+      "story": "",
+      "choices": [
+        {
+          "option": "Land in the hanger bay",
+          "next-page": 2
+        },
+        {
+          "option": "Look for a maintenance hatch to enter",
+          "next-page": 3
+        }
+      ]
+    }
+  ]
 }
