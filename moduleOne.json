@@ -1,26 +1,36 @@
 {
   "pages": [
     {
-      "page-num": 1,
-      "story": "Shaking off the haunting thoughts of debt collectors who might decide that galactic standard time isn't the same in this sector, you resolve to seize the opportunity while it's still available. With determination fueling your actions, you initiate the hyperspace sequence, feeling the familiar hum of your ship's engines as you propel yourself towards the abandoned station. The race is on, and you're determined to get there before a swarm of scavengers beat you to the potential treasure trove.</br>Bringing the ship into hyperdrive, you leave V.I. to mind the controls. Your biggest advantage, operating solo, lies in the speed and reaction time you can afford. In a profession flooded with opportunists and a constant influx of wrecks appearing in the sector, agility is your key to staying ahead. The need for speed has become a constant companion, making the ritual of checking equipment before emerging for work a well-practiced routine. As the stars streak into lines of light, you focus on the task ahead, eager to beat the competition to the secrets that the abandoned station may hold.</br>Going over your equipment, you start with what has practically become like a second skin—the trusty space suit. You're always careful with the image link hooked into the helmet. This link goes straight to V.I. back on the ship, allowing her to feed you real-time information and values of the scrap you're eyeing for salvage. But don't think the only time pressure you have is your competition; no, you also have to contend with your greatest weakness as a spacer—your need for oxygen.</br>In the silent expanse of space, where every breath is measured and every second counts, the reliable hiss of your life support system becomes a comforting symphony. It's a reminder that, as much as you're racing against rival scavengers, you're also racing against the ticking clock of your own air supply. A glance at the suit's gauge tells you that you have only a limited time before you must return to the safety of your ship. Time is of the essence, and with a deep breath, you prepare to embark on another perilous journey into the unknown.",
+      "pageNum": 0,
+      "story": "In the year 2122, the specific time of year holds little significance, especially when you're light-years away from any weather to experience. You're a scavenger—an explorer of abandoned wrecks, seeking anything of value that was left behind or could be salvaged. Despite the vastness of space, you're not entirely alone on this journey. Most ships come equipped with a standard personality unit known as V.I., a Virtual Intelligence designed to keep you company amidst the cosmic isolation.<br> <br> You recently received a tip about an abandoned station that reappeared on the radar not too long ago. Rumor has it, something went awry with a wormhole, or perhaps someone clumsily spilled blue milk on the main navigation computer, triggering an emergency hop into the unknown. Regardless of the specifics, what's clear is your desperate need for credits. It's a classic dilemma: risk incurring some hefty Federation fines by illegally salvaging their property, or take the drastic step of selling your starship to avoid a fate where your legs end up resembling jelly.<br> <br> For you, there seems to be only one viable option...",
       "choices": [
         {
           "option": "Proceed",
-          "next-page": 2
+          "nextPage": 1
         }
       ]
     },
     {
-      "page-num": 2,
-      "story": "",
+      "pageNum": 1,
+      "story": "Shaking off the haunting thoughts of debt collectors who might decide that galactic standard time isn't the same in this sector, you resolve to seize the opportunity while it's still available. With determination fueling your actions, you initiate the hyperspace sequence, feeling the familiar hum of your ship's engines as you propel yourself towards the abandoned station. The race is on, and you're determined to get there before a swarm of scavengers beat you to the potential treasure trove.<br> <br>Bringing the ship into hyperdrive, you leave V.I. to mind the controls. Your biggest advantage, operating solo, lies in the speed and reaction time you can afford. In a profession flooded with opportunists and a constant influx of wrecks appearing in the sector, agility is your key to staying ahead. The need for speed has become a constant companion, making the ritual of checking equipment before emerging for work a well-practiced routine. As the stars streak into lines of light, you focus on the task ahead, eager to beat the competition to the secrets that the abandoned station may hold.<br> <br>Going over your equipment, you start with what has practically become like a second skin—the trusty space suit. You're always careful with the image link hooked into the helmet. This link goes straight to V.I. back on the ship, allowing her to feed you real-time information and values of the scrap you're eyeing for salvage. But don't think the only time pressure you have is your competition; no, you also have to contend with your greatest weakness as a spacer—your need for oxygen.",
+      "choices": [
+        {
+          "option": "Proceed",
+          "nextPage": 2
+        }
+      ]
+    },
+    {
+      "pageNum": 2,
+      "story": "As you're about to check the condition of the tools on your suit's belt, V.I. alerts you to the closing proximity of your destination. Hyperspace travel has always been a tad more inexact than the techies would like you to believe. Nevertheless, it suited your purpose just fine as you slipped into your EVA suit and returned to the helm.<br><br>As soon as your seat cradled you, you dropped out of hyperspace just outside a debris field. Light from distant stars illuminated the shape of the station. Carefully, you piloted your freighter through the field, wincing at every small clunk of debris bouncing off the hull, too small to avoid. A few bodies amidst the wreckage seemed to have been flash-frozen, but that wasn't too abnormal for something like this.<br><br>Before long, you arrived at the most intact part of the station—the main building block and central core, referred to by shipbuilders and scrappers as module one. The colossal structure, hundreds of feet wide, was built almost in a circular fashion, part of a pillar designed to spin and maintain its position. Your sensors picked up the formerly welcoming sight of the hangar bay, where many travelers must have passed through in its prime. Now, it sat in the shadow of its own destruction, beckoning those who dared to enter its shady depths.<br><br>You've picked up a few instincts in your years of spacing through abandoned hulks of scrap. There are benefits to entering through the hangar—a faster escape, a good look at what you're getting into. The downside is, if security is still online, you might be facing at least a turret ready to shred you the moment you step into its sight.<br><br>And then there's the matter of high-value sites—officers' quarters, shops, and data banks—further inside, requiring more oxygen and time on the station. Even with the hangar approach, wandering too far from the ship is a risk.<br><br>Recalling an old trick your former employer taught you, the straightforward approach isn't the only option. The old maintenance hatches, used by engineers to access internal infrastructure, provide entry practically anywhere on the desired salvaging spot. It's a quick and easy route, but not always the best for a hasty escape. Your former employer met his demise, mauled by a starshade marauder, a testament to the risks involved.<br><br>Despite the potential danger, it offers more time to gather loot. As you weigh the pros and cons of each approach, considering the lure of quick rewards against the lurking threats, you make your decision...",
       "choices": [
         {
           "option": "Land in the hanger bay",
-          "next-page": 2
+          "nextPage": 3
         },
         {
-          "option": "Look for a maintenance hatch to enter",
-          "next-page": 3
+          "option": "Find a maintenance hatch",
+          "nextPage": 4
         }
       ]
     }

@@ -25,9 +25,12 @@ body {
 
 .choices {
     color: goldenrod;
-    font-size: 16px;
+    font-size: 20px;
     text-align: left;
     font-style: italic;
+    border: none;
+    background-color: #161616;
+    padding-bottom: 10px;
 }
 
 .menu {
@@ -54,3 +57,5 @@ a:visited {
     color:red; }
 .hud__oxygen{
     color: aqua; }
+.hud__profit{
+    color:goldenrod; }

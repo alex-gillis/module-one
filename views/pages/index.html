@@ -9,29 +9,10 @@
     <body>
         <!--<div class="reference">Imagery</div>-->
         <div class="journal">
-            <p class="story">
-                It's the year 2122. The specific time of year holds little significance, 
-                especially when you're light-years away from any weather to experience. 
-                You're a scavenger—an explorer of abandoned wrecks, seeking anything of 
-                value that was left behind or could be salvaged. Despite the vastness 
-                of space, you're not entirely alone on this journey. Most ships come 
-                equipped with a standard personality unit known as V.I., a Virtual 
-                Intelligence designed to keep you company amidst the cosmic isolation.
-                <br> <br>
-                You recently received a tip about an abandoned station that reappeared 
-                on the radar not too long ago. Rumor has it, something went awry with a 
-                wormhole, or perhaps someone clumsily spilled blue milk on the main 
-                navigation computer, triggering an emergency hop into the unknown. 
-                Regardless of the specifics, what's clear is your desperate need for 
-                credits. It's a classic dilemma: risk incurring some hefty Federation 
-                fines by illegally salvaging their property, or take the drastic step of 
-                selling your starship to avoid a fate where your legs end up resembling 
-                jelly.
-                <br> <br>
-                For you, there seems to be only one viable option...
-            </p>
-            <div id="choices" class="choices">
-                <p id="demo" onclick="myFunction()">Proceed</p>
+            <p id="story" class="story"></p>
+            <div id="choices">
+                <button style="border: none; background-color: #161616; color:goldenrod; font-size:16px; text-align: center;" onclick="popChoices(0)">
+                <h3>Start Game</h3></button>
             </div>
         </div>
         <div class="menu">
@@ -45,10 +26,11 @@
                 <h4>Character Statistics</h4>
                 <p class="hud">
                     <!--Vitals should probably go Healthy > Injured > Wounded > Dead-->
-                    <p class="hud__health">Vital Signs: Healthy</p>
+                    <p class="hud__health">Vital Signs: <span id="vitals">Healthy</span></p>
                     <!--Oxygen is a similar system with all actions taking a certain percentage of O2-->
-                    <p class="hud__oxygen">Oxygen Levels: 100%</p>
+                    <p class="hud__oxygen">Oxygen Levels: <span id="oxygen">100</span>%</p>
                     <!--Obviously, either running out is a game over-->
+                    <p class="hud__profit">Scavenged Profit: <span id="profit">0</span> creds</p>
                 </p>
             </div>
             <div class="menu__links">
