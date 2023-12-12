@@ -11,8 +11,8 @@
         <div class="journal">
             <p id="story" class="story"></p>
             <div id="choices">
-                <button style="border: none; background-color: #161616; color:goldenrod; font-size:16px; text-align: center;" onclick="popChoices(0)">
-                <h3>Start Game</h3></button>
+                <button style="border: none; background-color: #161616; color:goldenrod; font-size:16px; text-align: center; padding-left: 20px;" onclick="popGame(0)">
+                <h2>Start Game</h2></button>
             </div>
         </div>
         <div class="menu">
@@ -26,11 +26,11 @@
                 <h4>Character Statistics</h4>
                 <p class="hud">
                     <!--Vitals should probably go Healthy > Injured > Wounded > Dead-->
-                    <p class="hud__health">Vital Signs: <span id="vitals">Healthy</span></p>
+                    <p class="hud__health">Vital Signs: <span id="health">Unknown</span></p>
                     <!--Oxygen is a similar system with all actions taking a certain percentage of O2-->
-                    <p class="hud__oxygen">Oxygen Levels: <span id="oxygen">100</span>%</p>
+                    <p class="hud__oxygen">Oxygen Levels: <span id="oxygen">???</span>%</p>
                     <!--Obviously, either running out is a game over-->
-                    <p class="hud__profit">Scavenged Profit: <span id="profit">0</span> creds</p>
+                    <p class="hud__profit">Potential Profits: <span id="profit">???</span> creds</p>
                 </p>
             </div>
             <div class="menu__links">
