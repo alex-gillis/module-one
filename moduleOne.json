@@ -110,7 +110,7 @@
       "story": "''@%#$ this!'' you say to yourself. <br> <br> You decide that the debt collectors are the better call. At least with them you know what to expect...",
       "choices": [
         {
-          "option": "Want to try again?",
+          "option": "But do you really want to try?",
           "nextPage": 0, 
           "key": 1
         }

@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./public/css/style.css" /> 
+        <link rel="stylesheet" href="./style.css" /> 
         <title>Scavenging Module One</title>
     </head>
     <body>
@@ -12,7 +12,7 @@
             <p id="story" class="story"></p>
             <div id="choices">
                 <div id="title" class="title">
-                    <button class="title__button" onclick="startGame()">
+                    <button class="title__button" onclick="startGame(0)">
                     <h2>Start Game</h2></button>
                     <button class="title__button" onclick="loadGame()">
                     <h2>Continue Game</h2></button>
@@ -37,6 +37,9 @@
                     <span id="delete">
                         <button class="settings" onclick="deleteSave()">Delete Save</button>
                     </span>
+                    <br>
+                    <br>
+                    <span class="feedback" id="feedback"></span>
                 </p>
             </div>
             <div class="menu__stats">

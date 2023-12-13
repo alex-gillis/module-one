@@ -4,7 +4,7 @@ let myPages, myChoices, myStory;
 // referring to HTML objects associated with the character
 let myHealth, myOxygen, myProfit;
 // referring to HTML objects associated with the settings
-let mySave, myLoad;
+let mySave, myLoad, myFeedback;
 // referring to HTML objects associated with the settings
 let myTitle;
 // referring to storage page
@@ -64,10 +64,10 @@ function pushKey(reqPage, myKey) {
     });
 }
 
-function startGame() {
+function startGame(pgNum) {
     mySave.innerHTML = `<button class="settings" onclick="saveGame()">Save Game</button>`;
     myLoad.innerHTML = `<button class="settings" onclick="loadGame()">Load Game</button>`;
-    popGame(0);
+    popGame(pgNum);
 }
 
 function hasExistingGame() {
@@ -134,6 +134,8 @@ function popGame(pgNum) {
     // keeping track of where the player has been
     playersTrail.push(pgNum);
     // console.log("Where the player has been...  " + playersTrail);
+
+    myFeedback.innerHTML = "";
 }
 
 function saveGame() {
@@ -143,36 +145,43 @@ function saveGame() {
     localStorage.setItem("pageNumber", myPage.pageNum);
     localStorage.setItem("playerHistory", JSON.stringify(playersTrail));
 
-    // console.log(Array.isArray(JSON.parse(localStorage.getItem("playerHistory"))));
+    myFeedback.innerHTML = "Your progess has been saved";
+
 }
 
 function loadGame() {
     // console.log("You attempted to load the game!");
     if (!localStorage.getItem("playerHistory")) {
-        popGame(localStorage.getItem("pageNumber"));
+        startGame(localStorage.getItem("pageNumber"));
     } else {
         playersTrail = JSON.parse(localStorage.getItem("playerHistory"));
         popGame(localStorage.getItem("pageNumber"));
+        startGame(localStorage.getItem("pageNumber"));
     }
+
+    myFeedback.innerHTML = "Your progress has been restored";
 }
 
 function deleteSave() {
     localStorage.clear();
     hasExistingGame()
+
+    myFeedback.innerHTML = "Save File Deleted";
 }
 
 function main() {
-    myChoices = document.getElementById("choices");
-    myStory   = document.getElementById("story");
+    myChoices  = document.getElementById("choices");
+    myStory    = document.getElementById("story");
 
-    myHealth  = document.getElementById("health");
-    myOxygen  = document.getElementById("oxygen");
-    myProfit  = document.getElementById("profit");
+    myHealth   = document.getElementById("health");
+    myOxygen   = document.getElementById("oxygen");
+    myProfit   = document.getElementById("profit");
 
-    mySave    = document.getElementById("save");
-    myLoad    = document.getElementById("load"); 
+    mySave     = document.getElementById("save");
+    myLoad     = document.getElementById("load"); 
+    myFeedback = document.getElementById("feedback"); 
 
-    myTitle   = document.getElementById("title");
+    myTitle    = document.getElementById("title");
 
     getJSONData(storyJSON, collectPages, onError);
 
