@@ -9,7 +9,8 @@
       "choices": [
         {
           "option": "Proceed",
-          "nextPage": 1
+          "nextPage": 1,
+          "key": 1
         }
       ]
     },
@@ -22,7 +23,8 @@
       "choices": [
         {
           "option": "Proceed",
-          "nextPage": 2
+          "nextPage": 2,
+          "key": 1
         }
       ]
     },
@@ -35,15 +37,18 @@
       "choices": [
         {
           "option": "Land in the hanger bay",
-          "nextPage": 3
+          "nextPage": 3,
+          "key": 1
         },
         {
           "option": "Find a maintenance hatch",
-          "nextPage": 4
+          "nextPage": 4,
+          "key": 2
         },
         {
-          "option": "Return to the ship",
-          "nextPage": 9
+          "option": "Just leave",
+          "nextPage": 6,
+          "key": 3
         }
       ]
     },
@@ -56,11 +61,13 @@
       "choices": [
         {
           "option": "",
-          "nextPage": 5
+          "nextPage": 7,
+          "key": 1
         },
         {
           "option": "",
-          "nextPage": 6
+          "nextPage": 7,
+          "key": 2
         }
       ]
     },
@@ -73,16 +80,23 @@
       "choices": [
         {
           "option": "",
-          "nextPage": 7
+          "nextPage": 7,
+          "key": 1
         },
         {
           "option": "",
-          "nextPage": 8
+          "nextPage": 7,
+          "key": 2
+        },
+        {
+          "option": "Return to the ship",
+          "nextPage": 5,
+          "key": 3
         }
       ]
     },
     {
-      "pageNum": 9,
+      "pageNum": 5,
       "vitals": 0,
       "oxygen": 0,
       "profit": 0,
@@ -90,11 +104,41 @@
       "choices": [
         {
           "option": "Leave",
-          "nextPage": 10
+          "nextPage": 7,
+          "key": 1
         },
         {
           "option": "Refill air and head back inside",
-          "nextPage": 11
+          "nextPage": 7,
+          "key": 2
+        }
+      ]
+    },
+    {
+      "pageNum": 6,
+      "vitals": 0,
+      "oxygen": 0,
+      "profit": 0,
+      "story": "'Fuck this!' you say to yourself. <br> <br> You decide that the debt collectors are the better call. At least with them you know what to expect.",
+      "choices": [
+        {
+          "option": "Start Again?",
+          "nextPage": 0, 
+          "key": 1
+        }
+      ]
+    },
+    {
+      "pageNum": 7,
+      "vitals": 0,
+      "oxygen": 0,
+      "profit": 0,
+      "story": "Unknown Page",
+      "choices": [
+        {
+          "option": "Start Again?",
+          "nextPage": 0,
+          "key": 1
         }
       ]
     }

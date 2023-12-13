@@ -5,12 +5,14 @@ let myStory;
 let myHealth;
 let myOxygen;
 let myProfit;
+let mySave;
+let myLoad;
 
 let currentHealth = 3;
 let currentO2 = 100;
 let totalProfit = 0;
 
-let playersPath = [];
+let playersTrail = [];
 
 // test functions
 /* 
@@ -106,6 +108,27 @@ function onError() {
     console.log("*** Error has occured during fetch");
 }
 
+function pushKey(reqPage, myKey) {
+    document.addEventListener("keydown", (e) => {
+        console.log("key down " + e.key);
+        console.log("req key " + myKey);
+        if (e.key === myKey) {
+            e.preventDefault();
+
+            popGame(reqPage);
+
+            return false;
+        }
+    });
+}
+
+function startGame() {
+    mySave.innerHTML = `<button class="settings" onclick="saveGame()">Save Game</button>`;
+    myLoad.innerHTML = `<button class="settings" onclick="loadGame()">Load Game</button>`;
+
+    popGame(0);
+}
+
 function popGame(pgNum) {
     const myPage = myPages[pgNum]; 
     // console.log('---page print out---', myPage)
@@ -115,6 +138,9 @@ function popGame(pgNum) {
     for (const myChoice of myPage.choices) {
         // console.log('---choice loop---', myChoice)
         myChoices.innerHTML += `<button class="choices" onclick="popGame(${myChoice.nextPage})">${myChoice.option}</button><br>`
+        
+        // // add keyboard functionality
+        // pushKey(myChoice.nextPage, myChoice.key);
     }
 
     // calculating profits
@@ -133,8 +159,8 @@ function popGame(pgNum) {
     } else if (currentHealth == 0) {
         myHealth.innerHTML = "Dead";
         // gonna have to put in whatever pgnumber it is with the appropriate death
-        if (myPage.death == undefined) {
-            popGame(myPage.death);
+        if (myPage.death != undefined) {
+            popGame(!myPage?.death);
         } else {
             // popGame(generic death);
         }
@@ -149,18 +175,35 @@ function popGame(pgNum) {
         // popGame(oxygen death);
     }
 
-    // keeping track of where the player has been
-    playersPath.push(pgNum);
+    // checking for restart to wipe the trail
+    if (myPage.pageNum == 0) {
+        playersTrail = [];
+    }
 
+    // keeping track of where the player has been
+    playersTrail.push(pgNum);
+    // console.log("Where the player has been...  " + playersTrail);
+}
+
+function saveGame() {
+    console.log("You attempted to save the game!");
+    console.log("Sadly there is no saving you!");
+}
+
+function loadGame() {
+    console.log("You attempted to load the game!");
 }
 
 function main() {
     myChoices = document.getElementById("choices");
-    myStory = document.getElementById("story");
+    myStory   = document.getElementById("story");
 
-    myHealth = document.getElementById("health");
-    myOxygen = document.getElementById("oxygen");
-    myProfit = document.getElementById("profit");
+    myHealth  = document.getElementById("health");
+    myOxygen  = document.getElementById("oxygen");
+    myProfit  = document.getElementById("profit");
+
+    mySave    = document.getElementById("save");
+    myLoad    = document.getElementById("load"); 
 
     getJSONData(storyJSON, collectPages, onError);
 }

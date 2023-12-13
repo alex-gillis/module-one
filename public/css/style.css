@@ -14,6 +14,23 @@ body {
     flex-wrap: wrap;
     align-items: stretch; }
 
+.start {
+    border: none; 
+    background-color: #161616; 
+    color:goldenrod; 
+    font-size:16px; 
+    text-align: center; 
+    padding-left: 20px;
+}
+
+.settings {
+    font-size: 20px;
+    color: forestgreen;
+    border: none;
+    background-color: #161616;
+    padding-bottom: 10px;
+}
+
 .journal {
     width: 300px;
     flex: 10 1 auto;
@@ -39,7 +56,7 @@ body {
     flex-direction: column;
     align-items: flex-end; }
 .menu__settings {
-    height: 25%;}
+    height: 25%; }
 .menu__stats {
     height: 70%; }
 .menu__links {
