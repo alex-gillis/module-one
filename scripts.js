@@ -1,81 +1,23 @@
-const storyJSON = '../../moduleOne.json';
-let myPages; 
-let myChoices;
-let myStory;
-let myHealth;
-let myOxygen;
-let myProfit;
-let mySave;
-let myLoad;
+const storyJSON = './moduleOne.json';
+// referring to HTML objects associated with the storyline
+let myPages, myChoices, myStory;
+// referring to HTML objects associated with the character
+let myHealth, myOxygen, myProfit;
+// referring to HTML objects associated with the settings
+let mySave, myLoad;
+// referring to HTML objects associated with the settings
+let myTitle;
+// referring to storage page
+let myPage;
 
+// initializing the base statistics when the game loads
 let currentHealth = 3;
 let currentO2 = 100;
 let totalProfit = 0;
 
+// tracking the pages visited by characters
+// ensures that the same page is not printed multiple times when retracing steps
 let playersTrail = [];
-
-// test functions
-/* 
-    function myFunction() { document.getElementById("demo").innerHTML 
-        = "<button id=\"demo\" class=\"choices\" onclick=\"myTest()\">
-        YOU MADE YOUR CHOICE!</button>"; }
-*/
-// function myTest() { console.log("*** Button is operating as it should"); }
-
-function forFors() {
-    // console.log('---POP---', result)
-
-    // --- Sample of looping over objectts ---
-    // console.log('---Object.keys---', Object.keys(result)) // ['fieldA', 'fieldB']
-    // console.log('---Object.values---', Object.values(result)) // [ 'something', 'some other thing' ]
-    // console.log('---Object.entries---', Object.entries(result)) // [ [ 'fieldA', 'something' ], [ 'fieldB', 'some other thing' ] ]
-
-    // const resultKeyArray = Object.keys(result)
-    // for (let i = 0; i < resultKeyArray.length; i++) {
-    //     console.log('result---', result[resultKeyArray[i]])
-    // }
-
-    // for (const key of resultKeyArray) {
-    //     console.log('result2---', result[key])
-    // }
-
-    // for (const key in result) {
-    //     console.log('result3---', result[key])
-    // }
-
-    // /*
-    //     let result = {
-    //         fieldA: 'something',
-    //         fieldB: 'some other thing'
-    //     }
-    // result[fieldA]
-    // */
-    // // Laurtann is here
-
-    // --- Sample of nested for loops ---
-    // pages is an arr of obj. within each obj, there is a key called choices. Choices is an array.
-
-    const testPageSingular = {
-        choices: ['0', '1', '2']
-    }
-    const testPageSingular2 = {
-        choices: [...testPageSingular.choices, '3']
-    }
-    const testPages = [testPageSingular, testPageSingular2]
-    // for (let i = 0; i < testPages.length; i++) {
-    //     console.log('---testPages[i]---', testPages[i])
-    //     for (let j = 0; j < testPages[i].choices.length; j++) {
-    //         console.log('---innerLoop---', testPages[i].choices[j])
-    //     }
-    // }
-
-    for (const myPage of testPages) {
-        console.log('---outerloop---', myPage)
-        for (const myChoice of myPage.choices) {
-            console.log('---innerloop---', myChoice)
-        }
-    };
-}
 
 function getJSONData(retrieveScript, success, failure) {
     fetch(retrieveScript)
@@ -125,12 +67,20 @@ function pushKey(reqPage, myKey) {
 function startGame() {
     mySave.innerHTML = `<button class="settings" onclick="saveGame()">Save Game</button>`;
     myLoad.innerHTML = `<button class="settings" onclick="loadGame()">Load Game</button>`;
-
     popGame(0);
 }
 
+function hasExistingGame() {
+    if (!localStorage.getItem("playerHistory")) {
+        myTitle.innerHTML = `<button class="title__button" onclick="startGame()"><h2>Start Game</h2></button>`
+    } else {
+        myTitle.innerHTML = `<button class="title__button" onclick="startGame()"><h2>Start New Game</h2></button>
+        <button class="title__button" onclick="loadGame()"><h2>Continue Game</h2></button>`
+    }
+}
+
 function popGame(pgNum) {
-    const myPage = myPages[pgNum]; 
+    myPage = myPages[pgNum]; 
     // console.log('---page print out---', myPage)
     myStory.innerHTML = "";
     myStory.innerHTML = myPage.story;
@@ -156,13 +106,14 @@ function popGame(pgNum) {
         myHealth.innerHTML = "Injured";
     } else if (currentHealth == 1) {
         myHealth.innerHTML = "Wounded";
-    } else if (currentHealth == 0) {
+    } else if (currentHealth <= 0) {
         myHealth.innerHTML = "Dead";
         // gonna have to put in whatever pgnumber it is with the appropriate death
         if (myPage.death != undefined) {
             popGame(!myPage?.death);
         } else {
-            // popGame(generic death);
+            // generic death page
+            popGame(8);
         }
     }
 
@@ -170,9 +121,9 @@ function popGame(pgNum) {
     currentO2 = myPage.oxygen + currentO2;
     myOxygen.innerHTML = currentO2;
 
-    if (currentO2 == 0) {
+    if (currentO2 <= 0) {
         // death from lack of air
-        // popGame(oxygen death);
+        popGame(9);
     }
 
     // checking for restart to wipe the trail
@@ -186,12 +137,28 @@ function popGame(pgNum) {
 }
 
 function saveGame() {
-    console.log("You attempted to save the game!");
-    console.log("Sadly there is no saving you!");
+    // console.log("You attempted to save the game!");
+    // console.log("Sadly there is no saving you >:P");
+    
+    localStorage.setItem("pageNumber", myPage.pageNum);
+    localStorage.setItem("playerHistory", JSON.stringify(playersTrail));
+
+    // console.log(Array.isArray(JSON.parse(localStorage.getItem("playerHistory"))));
 }
 
 function loadGame() {
-    console.log("You attempted to load the game!");
+    // console.log("You attempted to load the game!");
+    if (!localStorage.getItem("playerHistory")) {
+        popGame(localStorage.getItem("pageNumber"));
+    } else {
+        playersTrail = JSON.parse(localStorage.getItem("playerHistory"));
+        popGame(localStorage.getItem("pageNumber"));
+    }
+}
+
+function deleteSave() {
+    localStorage.clear();
+    hasExistingGame()
 }
 
 function main() {
@@ -205,14 +172,11 @@ function main() {
     mySave    = document.getElementById("save");
     myLoad    = document.getElementById("load"); 
 
+    myTitle   = document.getElementById("title");
+
     getJSONData(storyJSON, collectPages, onError);
+
+    hasExistingGame();
 }
-
-// const result = {
-//     fieldA: 'something',
-//     fieldB: 'some other thing'
-// }
-
-// popChoices('');
 
 main();

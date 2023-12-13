@@ -9,8 +9,7 @@
       "choices": [
         {
           "option": "Proceed",
-          "nextPage": 1,
-          "key": 1
+          "nextPage": 1
         }
       ]
     },
@@ -23,8 +22,7 @@
       "choices": [
         {
           "option": "Proceed",
-          "nextPage": 2,
-          "key": 1
+          "nextPage": 2
         }
       ]
     },
@@ -37,18 +35,15 @@
       "choices": [
         {
           "option": "Land in the hanger bay",
-          "nextPage": 3,
-          "key": 1
+          "nextPage": 3
         },
         {
           "option": "Find a maintenance hatch",
-          "nextPage": 4,
-          "key": 2
+          "nextPage": 4
         },
         {
           "option": "Just leave",
-          "nextPage": 6,
-          "key": 3
+          "nextPage": 6
         }
       ]
     },
@@ -61,13 +56,11 @@
       "choices": [
         {
           "option": "",
-          "nextPage": 7,
-          "key": 1
+          "nextPage": 7
         },
         {
           "option": "",
-          "nextPage": 7,
-          "key": 2
+          "nextPage": 7
         }
       ]
     },
@@ -80,18 +73,15 @@
       "choices": [
         {
           "option": "",
-          "nextPage": 7,
-          "key": 1
+          "nextPage": 7
         },
         {
           "option": "",
-          "nextPage": 7,
-          "key": 2
+          "nextPage": 7
         },
         {
           "option": "Return to the ship",
-          "nextPage": 5,
-          "key": 3
+          "nextPage": 5
         }
       ]
     },
@@ -104,13 +94,11 @@
       "choices": [
         {
           "option": "Leave",
-          "nextPage": 7,
-          "key": 1
+          "nextPage": 7
         },
         {
           "option": "Refill air and head back inside",
-          "nextPage": 7,
-          "key": 2
+          "nextPage": 7
         }
       ]
     },
@@ -119,10 +107,10 @@
       "vitals": 0,
       "oxygen": 0,
       "profit": 0,
-      "story": "'Fuck this!' you say to yourself. <br> <br> You decide that the debt collectors are the better call. At least with them you know what to expect.",
+      "story": "''@%#$ this!'' you say to yourself. <br> <br> You decide that the debt collectors are the better call. At least with them you know what to expect...",
       "choices": [
         {
-          "option": "Start Again?",
+          "option": "Want to try again?",
           "nextPage": 0, 
           "key": 1
         }
@@ -137,8 +125,33 @@
       "choices": [
         {
           "option": "Start Again?",
-          "nextPage": 0,
-          "key": 1
+          "nextPage": 0
+        }
+      ]
+    },
+    {
+      "pageNum": 8,
+      "vitals": 0,
+      "oxygen": 0,
+      "profit": 0,
+      "story": "Whether it be by a mishap with a machine or a monster that wants to eat your bones. <br> <br> It doesn't really matter now... <br> <br> Because you're <span style='font-weight: bold; text-decoration: underline;'> dead</span>. <br> <br> Sorry to break it to you...",
+      "choices": [
+        {
+          "option": "Want to try again?",
+          "nextPage": 0
+        }
+      ]
+    },
+    {
+      "pageNum": 9,
+      "vitals": 0,
+      "oxygen": 0,
+      "profit": 0,
+      "story": "As the last of your remaining oxygen is drained from your oxygen tanks, the warning alarms notifying you that you have taken what should have been your last breath... <br> <br> This should be alarming, a fear gripping your heart... <br> <br> But really all you can hear in your head is a stupid metal song from the 21st century",
+      "choices": [
+        {
+          "option": "Want to try again?",
+          "nextPage": 0
         }
       ]
     }

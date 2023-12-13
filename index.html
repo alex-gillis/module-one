@@ -11,8 +11,12 @@
         <div class="journal">
             <p id="story" class="story"></p>
             <div id="choices">
-                <button class="start" onclick="startGame()">
-                <h2>Start Game</h2></button>
+                <div id="title" class="title">
+                    <button class="title__button" onclick="startGame()">
+                    <h2>Start Game</h2></button>
+                    <button class="title__button" onclick="loadGame()">
+                    <h2>Continue Game</h2></button>
+                </div>
             </div>
         </div>
         <div class="menu">
@@ -26,7 +30,12 @@
                     <br> 
                     <br>
                     <span id="load">
-                        <button class="settings" onclick="loadGame()">Load Game</button>
+                        <button class="settings" style="color: gray;">Load Game</button>
+                    </span>
+                    <br> 
+                    <br>
+                    <span id="delete">
+                        <button class="settings" onclick="deleteSave()">Delete Save</button>
                     </span>
                 </p>
             </div>

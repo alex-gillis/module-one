@@ -13,14 +13,22 @@ body {
     justify-content: flex-start;
     flex-wrap: wrap;
     align-items: stretch; }
+    
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+}
 
-.start {
+.title__button {
     border: none; 
     background-color: #161616; 
     color:goldenrod; 
     font-size:16px; 
     text-align: center; 
-    padding-left: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .settings {
