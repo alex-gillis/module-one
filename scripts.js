@@ -67,6 +67,7 @@ function pushKey(reqPage, myKey) {
 function startGame(pgNum) {
     mySave.innerHTML = `<button class="settings" onclick="saveGame()">Save Game</button>`;
     myLoad.innerHTML = `<button class="settings" onclick="loadGame()">Load Game</button>`;
+    checkLoad();
     popGame(pgNum);
 }
 
@@ -77,6 +78,15 @@ function hasExistingGame() {
         myTitle.innerHTML = `<button class="title__button" onclick="startGame(0)"><h2>Start New Game</h2></button>
         <button class="title__button" onclick="loadGame()"><h2>Continue Game</h2></button>`
     }
+}
+
+function checkLoad() {
+    if (!localStorage.getItem("playerHistory")) {
+        myLoad.innerHTML = `<button class="settings" style="color: gray;">Load Game</button>`;
+    } else {
+        myLoad.innerHTML = `<button class="settings" onclick="loadGame()">Load Game</button>`;
+    }
+
 }
 
 function popGame(pgNum) {
@@ -136,6 +146,7 @@ function popGame(pgNum) {
     // console.log("Where the player has been...  " + playersTrail);
 
     myFeedback.innerHTML = "";
+    checkLoad();
 }
 
 function saveGame() {
@@ -145,6 +156,7 @@ function saveGame() {
     localStorage.setItem("pageNumber", myPage.pageNum);
     localStorage.setItem("playerHistory", JSON.stringify(playersTrail));
 
+    checkLoad();
     myFeedback.innerHTML = "Your progess has been saved";
 
 }
@@ -165,6 +177,7 @@ function loadGame() {
 function deleteSave() {
     localStorage.clear();
     hasExistingGame()
+    checkLoad();
 
     myFeedback.innerHTML = "Save File Deleted";
 }
