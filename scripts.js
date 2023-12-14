@@ -72,9 +72,9 @@ function startGame(pgNum) {
 
 function hasExistingGame() {
     if (!localStorage.getItem("playerHistory")) {
-        myTitle.innerHTML = `<button class="title__button" onclick="startGame()"><h2>Start Game</h2></button>`
+        myTitle.innerHTML = `<button class="title__button" onclick="startGame(0)"><h2>Start Game</h2></button>`
     } else {
-        myTitle.innerHTML = `<button class="title__button" onclick="startGame()"><h2>Start New Game</h2></button>
+        myTitle.innerHTML = `<button class="title__button" onclick="startGame(0)"><h2>Start New Game</h2></button>
         <button class="title__button" onclick="loadGame()"><h2>Continue Game</h2></button>`
     }
 }
