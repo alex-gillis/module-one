@@ -45,8 +45,8 @@ body {
 }
 
 .journal {
-    width: 300px;
-    flex: 10 1 auto;
+    width: 77.5%;
+    flex: 9 1 auto;
     text-align: left;
     padding-top: 10px;
     padding-left: 35px;
@@ -64,6 +64,7 @@ body {
 }
 
 .menu {
+    width: 20%;
     flex: 1 1 auto;
     justify-content: flex-end;
     flex-direction: column;
