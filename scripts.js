@@ -1,3 +1,4 @@
+// the path to retrieve the JSON
 const storyJSON = './moduleOne.json';
 // referring to HTML objects associated with the storyline
 let myPages, myChoices, myStory;
@@ -20,6 +21,7 @@ let totalProfit = 0;
 let playersTrail = [];
 
 function getJSONData(retrieveScript, success, failure) {
+    // retrieval of the JSON file
     fetch(retrieveScript)
         .then(function(response) {
             // console.log(response);
@@ -41,12 +43,13 @@ function getJSONData(retrieveScript, success, failure) {
 }
 
 function collectPages(result) {
+    // this fetches the JSON and puts it into an array that can be accessed globally
     myPages = result.pages;
-    // console.log('---POP---', myPages);
         
 }
 
 function onError() {
+    // this is an error that will be thrown up if the JSON can't be loaded
     console.log("*** Error has occured during fetch");
 }
 
@@ -65,6 +68,9 @@ function pushKey(reqPage, myKey) {
 }
 
 function startGame(pgNum) {
+    // the startGame function requires a pgNum (page number)
+    // to populate the story from the spot in the JSON array
+
     mySave.innerHTML = `<button class="settings" onclick="saveGame()">Save Game</button>`;
     myLoad.innerHTML = `<button class="settings" onclick="loadGame()">Load Game</button>`;
     checkLoad();
@@ -72,6 +78,9 @@ function startGame(pgNum) {
 }
 
 function hasExistingGame() {
+    // depending if there is a game file saved in localStorage
+    // the title screen will have a "Load Game" button
+
     if (!localStorage.getItem("playerHistory")) {
         myTitle.innerHTML = `<button class="title__button" onclick="startGame(0)"><h2>Start Game</h2></button>`
     } else {
@@ -81,6 +90,8 @@ function hasExistingGame() {
 }
 
 function checkLoad() {
+    // checkLoad is resposible for enabling/disabling 
+    // the load game button depending on if there is a file
     if (!localStorage.getItem("playerHistory")) {
         myLoad.innerHTML = `<button class="settings" style="color: gray;">Load Game</button>`;
     } else {
@@ -110,8 +121,9 @@ function popGame(pgNum) {
     // setting vitals
     currentHealth = myPage.vitals + currentHealth;
 
-    if (currentHealth == 3) {
+    if (currentHealth >= 3) {
         myHealth.innerHTML = "Healthy";
+        currentHealth = 3;
     } else if (currentHealth == 2) {
         myHealth.innerHTML = "Injured";
     } else if (currentHealth == 1) {
@@ -129,9 +141,11 @@ function popGame(pgNum) {
 
     // filling oxygen 
     currentO2 = myPage.oxygen + currentO2;
-    myOxygen.innerHTML = currentO2;
+    myOxygen.innerHTML = currentO2 + "%";
 
     if (currentO2 <= 0) {
+        myHealth.innerHTML = "Dead";
+        myOxygen.innerHTML = "Empty";
         // death from lack of air
         popGame(9);
     }
@@ -145,24 +159,22 @@ function popGame(pgNum) {
     playersTrail.push(pgNum);
     // console.log("Where the player has been...  " + playersTrail);
 
-    myFeedback.innerHTML = "";
     checkLoad();
+    myFeedback.innerHTML = "";
 }
 
 function saveGame() {
-    // console.log("You attempted to save the game!");
-    // console.log("Sadly there is no saving you >:P");
-    
+    // saving the file to localStorage
     localStorage.setItem("pageNumber", myPage.pageNum);
     localStorage.setItem("playerHistory", JSON.stringify(playersTrail));
 
+    // check load is for resetting the menu buttons
     checkLoad();
     myFeedback.innerHTML = "Your progess has been saved";
-
 }
 
 function loadGame() {
-    // console.log("You attempted to load the game!");
+    // this is to ensure that there is a save file
     if (!localStorage.getItem("playerHistory")) {
         startGame(localStorage.getItem("pageNumber"));
     } else {
@@ -175,14 +187,21 @@ function loadGame() {
 }
 
 function deleteSave() {
+    // this clears local storage of the save file
     localStorage.clear();
+    // resets the menu buttons
+    // has existing game is for the title screen
     hasExistingGame()
+    // check load is for the menu buttons
     checkLoad();
 
-    myFeedback.innerHTML = "Save File Deleted";
+    myFeedback.innerHTML = "Your progress has been deleted";
 }
 
 function main() {
+    // connecting HTML content to be populated through functions 
+    myTitle    = document.getElementById("title");
+
     myChoices  = document.getElementById("choices");
     myStory    = document.getElementById("story");
 
@@ -194,10 +213,10 @@ function main() {
     myLoad     = document.getElementById("load"); 
     myFeedback = document.getElementById("feedback"); 
 
-    myTitle    = document.getElementById("title");
-
+    // populating the array data from the json
     getJSONData(storyJSON, collectPages, onError);
-
+    
+    // checks if there is an existing game save
     hasExistingGame();
 }
 

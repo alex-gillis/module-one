@@ -18,7 +18,7 @@
       "vitals": 0,
       "oxygen": 0,
       "profit": 0,
-      "story": "Shaking off the haunting thoughts of debt collectors who might decide that galactic standard time isn't the same in this sector, you resolve to seize the opportunity while it's still available. With determination fueling your actions, you initiate the hyperspace sequence, feeling the familiar hum of your ship's engines as you propel yourself towards the abandoned station. The race is on, and you're determined to get there before a swarm of scavengers beat you to the potential treasure trove.<br> <br>Bringing the ship into hyperdrive, you leave V.I. to mind the controls. Your biggest advantage, operating solo, lies in the speed and reaction time you can afford. In a profession flooded with opportunists and a constant influx of wrecks appearing in the sector, agility is your key to staying ahead. The need for speed has become a constant companion, making the ritual of checking equipment before emerging for work a well-practiced routine. As the stars streak into lines of light, you focus on the task ahead, eager to beat the competition to the secrets that the abandoned station may hold.<br> <br>Going over your equipment, you start with what has practically become like a second skin—the trusty space suit. You're always careful with the image link hooked into the helmet. This link goes straight to V.I. back on the ship, allowing her to feed you real-time information and values of the scrap you're eyeing for salvage. But don't think the only time pressure you have is your competition; no, you also have to contend with your greatest weakness as a spacer—your need for oxygen.",
+      "story": "Shaking off the haunting thoughts of debt collectors who might decide that galactic standard time isn't the same in this sector, you resolve to seize the opportunity while it's still available. With determination fueling your actions, you initiate the hyperspace sequence, feeling the familiar hum of your ship's engines as you propel yourself towards the abandoned station. The race is on, and you're determined to get there before a swarm of scavengers beat you to the potential treasure trove.<br> <br>Bringing the ship into hyperdrive, you leave the V.I. to mind the controls. Your biggest advantage, operating solo, lies in the speed and reaction time you can afford. In a profession flooded with opportunists and a constant influx of wrecks appearing in the sector, agility is your key to staying ahead. The need for speed has become a constant companion, making the ritual of checking equipment before emerging for work a well-practiced routine. As the stars streak into lines of light, you focus on the task ahead, eager to beat the competition to the secrets that the abandoned station may hold.<br> <br>Going over your equipment, you start with what has practically become like a second skin—the trusty space suit. You're always careful with the image link hooked into the helmet. This link goes straight to V.I. back on the ship, allowing her to feed you real-time information and values of the scrap you're eyeing for salvage. But don't think the only time pressure you have is your competition; no, you also have to contend with your greatest weakness as a spacer—your need for oxygen.",
       "choices": [
         {
           "option": "Proceed",
@@ -69,19 +69,19 @@
       "vitals": 0,
       "oxygen": 0,
       "profit": 0,
-      "story": "Maintenance Hatch",
+      "story": "You bring your freighter around the outside of the station in a corkscrew, scanning carefully with both your experienced eyes and the ship's sensors for your target.<br><br>Towards the far end of the station module, counter to the hangar bay you originally spotted, lies the hatch. For safety purposes, in case of pirates or unforeseen space monstrosities, designers usually placed key functioning stations on the opposite end from the main hangars.<br><br>Descending the ship, you land just above the hatch before magnetizing to the station hull with the landing legs. Exiting the airlock on your freighter, you prepare for the short spacewalk to the hatch.<br><br>These hatches are designed with the assumption that, in the event of catastrophic system failure, they should be easy to open. Besides, if an unwanted guest were to use them as an entrance, the security system should be notified. Given how long this place has supposedly been inactive, you doubt many of those systems are still operational.<br><br>You open the hatch and crawl in among the piping, activating the night vision function of your helmet, painting everything in a soft blue glow. The passage isn't spacious, measuring between 2 to 2.5 feet—enough to move through but not comfortably turn around. As an experienced spacer, the claustrophobic view and navigating in your bulky suit aren't new to you.<br><br>You crawl for a couple of dozen yards until you find a connecting hatch into the station proper.<br><br>Popping your head out like a gopher, you survey the expected debris. The halls of this station have clearly seen better days, with trash littering the floors. However, the most crucial observation is the absence of signs of recent fighting or anything that might pose an immediate threat. In the limited gravity, pulling yourself into the hall is effortless.<br><br>A sign with a couple of directions catches your eye—now, which way will you choose?",
       "choices": [
         {
-          "option": "",
+          "option": "The Officers' Quarters",
+          "nextPage": 10
+        },
+        {
+          "option": "The Data Banks",
           "nextPage": 7
         },
         {
-          "option": "",
+          "option": "The Bridge",
           "nextPage": 7
-        },
-        {
-          "option": "Return to the ship",
-          "nextPage": 5
         }
       ]
     },
@@ -107,10 +107,10 @@
       "vitals": 0,
       "oxygen": 0,
       "profit": 0,
-      "story": "''@%#$ this!'' you say to yourself. <br> <br> You decide that the debt collectors are the better call. At least with them you know what to expect...",
+      "story": "Doints to this!'' you say to yourself. <br> <br> You decide that the debt collectors are the better call. At least with them you know what to expect...",
       "choices": [
         {
-          "option": "But do you really want to try?",
+          "option": "But don't you want to actually try?",
           "nextPage": 0, 
           "key": 1
         }
@@ -131,7 +131,7 @@
     },
     {
       "pageNum": 8,
-      "vitals": 0,
+      "vitals": -3,
       "oxygen": 0,
       "profit": 0,
       "story": "Whether it be by a mishap with a machine or a monster that wants to eat your bones. <br> <br> It doesn't really matter now... <br> <br> Because you're <span style='font-weight: bold; text-decoration: underline;'> dead</span>. <br> <br> Sorry to break it to you...",
@@ -147,7 +147,88 @@
       "vitals": 0,
       "oxygen": 0,
       "profit": 0,
-      "story": "As the last of your remaining oxygen is drained from your oxygen tanks, the warning alarms notifying you that you have taken what should have been your last breath... <br> <br> This should be alarming, a fear gripping your heart... <br> <br> But really all you can hear in your head is a stupid metal song from the 21st century",
+      "story": "As the last of your remaining oxygen is drained from your oxygen tanks, the warning alarms notifying you that you have taken what should have been your last breath... <br> <br> This should be alarming, a fear gripping your heart... <br> <br> But the most depressing part is that your final thought is a stupid metal song from the 21st century",
+      "choices": [
+        {
+          "option": "Want to try again?",
+          "nextPage": 0
+        }
+      ]
+    },
+    {
+      "pageNum": 10,
+      "vitals": 0,
+      "oxygen": 0,
+      "profit": 0,
+      "story": "Choosing the Officers' Quarters as your starting point makes sense. Your experience tells you that most station officers tend to be more concerned with lining their own pockets than maintaining order. You recall the guy responsible for parking fees back at Ritzico City, always finding ways to fleece spacers for as long as you can remember.<br><br>As you carefully make your way down the hall, you take solace in imagining stripping down that particular officer's place to the piping. The only sounds accompanying you are the echoing stomps of your boots, magnetizing and demagnetizing on the metallic floor, now devoid of the atmosphere that once filled this space.<br><br>Passing more heaps of debris, you notice what appear to be electrical burn marks along some of the hallway plating. They create a peculiar connect-the-dots picture across the hall. A little further down, you spot the sign that once proudly read ''Officers' Quarters,'' its glowing letters now dark and lifeless like the rest of the station.<br><br>Hopefully, you won't be joining them.",
+      "choices": [
+        {
+          "option": "Enter the quarters",
+          "nextPage": 13
+        }, {
+          "option": "Wait, what was that about scortch marks?",
+          "nextPage": 14
+        }
+      ]
+    },
+    {
+      "pageNum": 11,
+      "vitals": 0,
+      "oxygen": 0,
+      "profit": 0,
+      "story": "Go to the Data Banks",
+      "choices": [
+        {
+          "option": "Want to try again?",
+          "nextPage": 0
+        }
+      ]
+    },
+    {
+      "pageNum": 12,
+      "vitals": 0,
+      "oxygen": 0,
+      "profit": 0,
+      "story": "Go to the Bridge",
+      "choices": [
+        {
+          "option": "Want to try again?",
+          "nextPage": 0
+        }
+      ]
+    },
+    {
+      "pageNum": 13,
+      "vitals": 0,
+      "oxygen": 0,
+      "profit": 0,
+      "story": "Enter the Officers' Quarters",
+      "choices": [
+        {
+          "option": "Want to try again?",
+          "nextPage": 0
+        }
+      ]
+    },
+    {
+      "pageNum": 14,
+      "vitals": 0,
+      "oxygen": 0,
+      "profit": 0,
+      "story": "Wait, what was that about scortch marks?",
+      "choices": [
+        {
+          "option": "Carefully enter the Officers' Quarters",
+          "nextPage": 15
+        }
+      ]
+    },
+    {
+      "pageNum": 15,
+      "vitals": 0,
+      "oxygen": 0,
+      "profit": 0,
+      "story": "Carefully enter the Officers' Quarters",
       "choices": [
         {
           "option": "Want to try again?",
