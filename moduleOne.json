@@ -52,22 +52,22 @@
       "vitals": 0,
       "oxygen": 0,
       "profit": 0,
-      "story": "Hanger Bay",
+      "story": "Just because you`re going fast doesn`t mean you can`t take the safer of the two options. Who is to say what sort of damages those internal tunnels took during the catastrophe anyway. Better to stick with the path of least resistance.<br><br>Carefully you guide the freighter into the open maw of the hangar bay, the headlights of the ship illuminating what you aren`t too surprised about. Wrecks of ships are too numerous to count litter the inside as you maneuver to a ``parking space``. All you really manage is a place half clear of the debris, enough to maglock the landing legs to keep from bumping into things.<br><br>Although as you`re getting out of the pilot’s seat, you notice that some of the ships aren’t complete write-offs. Maybe they`d have something on board that has a profit to be made on it.<br><br>That being said, just because it holds what could be a prize inside doesn`t mean it`s worth the oxygen you`re expending looking through it when you compare it to the markets and places inside the station you can strip.",
       "choices": [
         {
-          "option": "",
-          "nextPage": 7
+          "option": "To the Markets",
+          "nextPage": 16
         },
         {
-          "option": "",
-          "nextPage": 7
+          "option": "Scavenge the Ships",
+          "nextPage": 17
         }
       ]
     },
     {
       "pageNum": 4,
       "vitals": 0,
-      "oxygen": 0,
+      "oxygen": -2,
       "profit": 0,
       "story": "You bring your freighter around the outside of the station in a corkscrew, scanning carefully with both your experienced eyes and the ship's sensors for your target.<br><br>Towards the far end of the station module, counter to the hangar bay you originally spotted, lies the hatch. For safety purposes, in case of pirates or unforeseen space monstrosities, designers usually placed key functioning stations on the opposite end from the main hangars.<br><br>Descending the ship, you land just above the hatch before magnetizing to the station hull with the landing legs. Exiting the airlock on your freighter, you prepare for the short spacewalk to the hatch.<br><br>These hatches are designed with the assumption that, in the event of catastrophic system failure, they should be easy to open. Besides, if an unwanted guest were to use them as an entrance, the security system should be notified. Given how long this place has supposedly been inactive, you doubt many of those systems are still operational.<br><br>You open the hatch and crawl in among the piping, activating the night vision function of your helmet, painting everything in a soft blue glow. The passage isn't spacious, measuring between 2 to 2.5 feet—enough to move through but not comfortably turn around. As an experienced spacer, the claustrophobic view and navigating in your bulky suit aren't new to you.<br><br>You crawl for a couple of dozen yards until you find a connecting hatch into the station proper.<br><br>Popping your head out like a gopher, you survey the expected debris. The halls of this station have clearly seen better days, with trash littering the floors. However, the most crucial observation is the absence of signs of recent fighting or anything that might pose an immediate threat. In the limited gravity, pulling yourself into the hall is effortless.<br><br>A sign with a couple of directions catches your eye—now, which way will you choose?",
       "choices": [
@@ -158,7 +158,7 @@
     {
       "pageNum": 10,
       "vitals": 0,
-      "oxygen": 0,
+      "oxygen": -2,
       "profit": 0,
       "story": "Choosing the Officers' Quarters as your starting point makes sense. Your experience tells you that most station officers tend to be more concerned with lining their own pockets than maintaining order. You recall the guy responsible for parking fees back at Ritzico City, always finding ways to fleece spacers for as long as you can remember.<br><br>As you carefully make your way down the hall, you take solace in imagining stripping down that particular officer's place to the piping. The only sounds accompanying you are the echoing stomps of your boots, magnetizing and demagnetizing on the metallic floor, now devoid of the atmosphere that once filled this space.<br><br>Passing more heaps of debris, you notice what appear to be electrical burn marks along some of the hallway plating. They create a peculiar connect-the-dots picture across the hall. A little further down, you spot the sign that once proudly read ''Officers' Quarters,'' its glowing letters now dark and lifeless like the rest of the station.<br><br>Hopefully, you won't be joining them.",
       "choices": [
@@ -233,6 +233,99 @@
         {
           "option": "Want to try again?",
           "nextPage": 0
+        }
+      ]
+    },
+    {
+      "pageNum": 16,
+      "vitals": 0,
+      "oxygen": 0,
+      "profit": 0,
+      "story": "To the Markets",
+      "choices": [
+        {
+          "option": "Want to try again?",
+          "nextPage": 0
+        }
+      ]
+    },
+    {
+      "pageNum": 17,
+      "vitals": 0,
+      "oxygen": 0,
+      "profit": 0,
+      "story": "Even if it wasn`t the jackpot, profit is profit is profit. All adds up in the end. That was your thought moving down the boarding ramp and out into the ruins of the shipyard.<br><br>Many of the ships seemed to have been damaged in what must have been the tumble of warp travel. Worthless odds and ends of different ships laid beaten and battered all around you in heaps, but two stood out amongst the rest.<br><br>On, what is currently your ceiling, you can see where a freighter with wide thrusters seemed to have plowed into the ceiling, burying its nose cone up to the front landing leg. You hazard a guess that it must’ve been one of the few that tried to escape but must have waited too long to do so or the pilot got jumpy and panicked.<br><br>The other ship that catches your eye seemed to be one that looked like it was owned by someone who must’ve been loaded. How can you identify that? Well, you see a lot of rich folks spend their wealth on ships that aren’t truly meant for flying. This ship is shaped more like a pear than a proper ship. The only ship still intact was on its landing legs. Designed with more accessories than actually necessary bits.<br><br>You didn’t quite travel in those circles much, but you know that many pirates refer to this kind of ship as “the dinner bell” because of its shape and being a payday for any of your less honor-bound cohorts.",
+      "choices": [
+        {
+          "option": "The Crashed Ship",
+          "nextPage": 18
+        },{
+          "option": "The Yacht",
+          "nextPage": 19
+        }
+      ]
+    },
+    {
+      "pageNum": 18,
+      "vitals": 0,
+      "oxygen": -6.5,
+      "profit": 3000,
+      "story": "Looking back up to the ceiling, you leap off the floor, propelling yourself towards the ship without bothering to use any of your limited jump juice for course correction.<br><br>In your approach, you get a nice view of the ship. It's a faster model, not quite a fighter craft, but the wear and tear suggests it's a proper spacer's craft, not some wannabe. It's not too dissimilar to your own, now that you think about it.<br><br>Using a tiny bit of jump juice to soften the landing, you arrive at the opening to the cargo bay. The crash left the hatch slightly askew, and while repairing it would be a hassle, you don't need to worry about that.<br><br>You take out the favorite tool in your toolbox—the Space Tool for Extraterrestrial Work or S.T.E.W. for short. This cylindrical device with a control panel near the handle contains various tools in a compact design, maybe larger than a standard fire extinguisher. From an illuminator to a welder, the latter is your preferred pick for this task. The front barrel of S.T.E.W. splits into four claws, forming a containment field for a plasma blade. Carefully cutting out the hatch, you make the opening large enough to avoid squeezing through.<br><br>Crawling inward, you find the cargo bay filled with the exact kinds of treasures you're looking for. It's almost as if someone did all the work for you, stripping down what must have been the yacht you spotted still parked in the hangar. However, reality hits when you realize how badly damaged most of it is—a collection of Fabergé eggs smashed to pieces, designer clothes burned from a fuel line rupture, and fancy furniture with real wood now damaged beyond repair. All because someone didn't know how to properly secure cargo in an emergency.<br><br>Just as you're about to give up in frustration, you decide to check the cockpit, crawling your way through the bent halls to the main deck where the pilot seems to have had a real tough time. Much of their body is reduced to mush, making it difficult to identify the species. There are some human-looking limb arrangements, but then there's this weird tail of black carapace—unidentifiable.<br><br>Disappointing, but you're not ready to be discouraged yet. As you turn to crawl back out, you notice a small box floating in a corner. Upon investigation, you find it contains a strange glass chalice. This could be worth something.",
+      "choices": [
+        {
+          "option": "To the Markets",
+          "nextPage": 16
+        },{
+          "option": "The Yacht",
+          "nextPage": 20
+        }
+      ]
+    },
+    {
+      "pageNum": 19,
+      "vitals": 0,
+      "oxygen": -6,
+      "profit": 500,
+      "story": "Instead of trying to find a path around the rubble of destroyed ships that block your way to the yacht, you stretch your legs and take a running jump towards the more expensive starship. With artificial gravity inactive on the station, your leap lacks the usual graceful arc of a normal jump. Instead, you propel yourself forward, overshooting the yacht slightly—fortunately, that's what your jump juice is for.<br><br>Using a small burst of air from your suit's propulsion system, you correct your trajectory to land on the side of the yacht. As you take out the favorite tool in your toolbox—the Space Tool for Extraterrestrial Work or S.T.E.W. for short—you notice that the closest hatch is already cut open, similar to a tool like S.T.E.W.<br><br>This is never a good sign, and out of habit, you approach with a hand on the cylindrical tool's handle. It's not necessarily a weapon, but it's better than nothing. Worry sinks into your gut like a stone, wondering if another scavenger beat you to the station, and you simply missed their vessel. There could be a hidden danger that caused the station's fall, like a horde of killer robots hellbent on rending flesh from bone, waiting inside for you.<br><br>But no, nothing could be worse than what you see when you look inside. Nothing fills you with more horror than spotting that the interior of the yacht is stripped bare of anything of value. You frantically check the drawers of the remaining furniture, any closets in the rooms, under the floating beds—no longer connected to the flooring as looters even took some of the carpeting.<br><br>You manage to find a couple of knick-knacks the looters must've missed, but so far, nothing to make this trip worthwhile. The air in your suit feels thinner as you weigh your options in the eerie silence of the stripped yacht.",
+      "choices": [
+        {
+          "option": "To the Markets",
+          "nextPage": 16
+        },{
+          "option": "The Crashed Ship",
+          "nextPage": 21
+        }
+      ]
+    },
+    {
+      "pageNum": 20,
+      "vitals": 0,
+      "oxygen": -6.5,
+      "profit": 3000,
+      "story": "From your vantage point in the cut-open cargo bay, you easily spot the yacht. With a stretch of your legs, you take a running jump towards the more expensive starship, ensuring a clear descent with your angle on the vessel.<br><br>Using a small burst of air from your suit's propulsion system, you correct your trajectory to land on the side of the yacht. As you take out the favorite tool in your toolbox again, you notice that the closest hatch is already cut open, likely with a similar tool to the S.T.E.W.<br><br>This is never a good sign, and out of habit, you approach with a hand on the cylindrical tool's handle. It's not necessarily a weapon, but it's better than nothing. Worry sinks into your gut like a stone, wondering if another scavenger beat you to the station, and you simply missed their vessel. There could be a hidden danger that caused the station's fall, like a horde of killer robots hellbent on rending flesh from bone, waiting inside for you.<br><br>But no, nothing could be worse than what you see when you look inside. Nothing fills you with more horror than spotting that the interior of the yacht is stripped bare of anything of value. This must have been where the crashed vessel got all its loot, apparently stopping for a robbery before fleeing the station—their greed likely causing their crash.<br><br>Not expecting to find much left behind, you do one token search of the rooms that you'd guess held value, coming up with a handful of trinkets that likely won't sell for much, but at least it's something. The disappointment lingers as you float in the stripped-down interior, contemplating your next move in the eerie silence of the looted yacht.",
+      "choices": [
+        {
+          "option": "To the Markets",
+          "nextPage": 16
+        },{
+          "option": "The Yacht",
+          "nextPage": 21
+        }
+      ]
+    },
+    {
+      "pageNum": 21,
+      "vitals": 0,
+      "oxygen": -3,
+      "profit": 350,
+      "story": "Instead of trying to find a path around the rubble of destroyed ships that block your way to the yacht, you stretch your legs and take a running jump towards the more expensive starship. With artificial gravity inactive on the station, your leap lacks the usual graceful arc of a normal jump. Instead, you propel yourself forward, overshooting the yacht slightly—fortunately, that's what your jump juice is for.<br><br>Using a small burst of air from your suit's propulsion system, you correct your trajectory to land on the side of the yacht. As you take out the favorite tool in your toolbox—the Space Tool for Extraterrestrial Work or S.T.E.W. for short—you notice that the closest hatch is already cut open, similar to a tool like S.T.E.W.<br><br>This is never a good sign, and out of habit, you approach with a hand on the cylindrical tool's handle. It's not necessarily a weapon, but it's better than nothing. Worry sinks into your gut like a stone, wondering if another scavenger beat you to the station, and you simply missed their vessel. There could be a hidden danger that caused the station's fall, like a horde of killer robots hellbent on rending flesh from bone, waiting inside for you.<br><br>But no, nothing could be worse than what you see when you look inside. Nothing fills you with more horror than spotting that the interior of the yacht is stripped bare of anything of value. You frantically check the drawers of the remaining furniture, any closets in the rooms, under the floating beds—no longer connected to the flooring as looters even took some of the carpeting.<br><br>You manage to find a couple of knick-knacks the looters must've missed, but so far, nothing to make this trip worthwhile. The air in your suit feels thinner as you weigh your options in the eerie silence of the stripped yacht.",
+      "choices": [
+        {
+          "option": "To the Markets",
+          "nextPage": 16
+        },{
+          "option": "The Crashed Ship",
+          "nextPage": 20
         }
       ]
     }

@@ -179,6 +179,30 @@ function loadGame() {
         startGame(localStorage.getItem("pageNumber"));
     } else {
         playersTrail = JSON.parse(localStorage.getItem("playerHistory"));
+        currentHealth = 3;
+        currentO2 = 100;
+        totalProfit = 0;
+
+        let playProg = JSON.parse(localStorage.getItem("playerHistory"));
+        // playProg.length = playProg.length - 1;
+        let checkProg = playProg.pop();
+        console.log("Where the player has been...  " + playersTrail);
+        console.log("Where the player has been...  " + playProg);
+        console.log(checkProg);
+
+        for (const myProg of playProg) {
+            let progress = myPages[myProg];
+            
+            currentHealth = progress.vitals + currentHealth;
+            currentO2 = progress.oxygen + currentO2;
+            totalProfit = progress.profit + totalProfit;
+        }
+
+        let progress = myPages[checkProg];
+        currentHealth = currentHealth - progress.vitals;
+        currentO2 = currentO2 - progress.oxygen;
+        totalProfit = totalProfit - progress.profit;
+
         popGame(localStorage.getItem("pageNumber"));
         startGame(localStorage.getItem("pageNumber"));
     }

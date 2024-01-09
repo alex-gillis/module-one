@@ -1,6 +1,6 @@
 ### Play it for yourself [Here](https://alex-gillis.github.io/module-one/)
 
-Embark on a thrilling journey with Scavenging Module One, a  choose-your-own-adventure game skillfully crafted using JavaScript, HTML, and CSS.
+Embark on a thrilling journey with Scavenging Module One, a choose-your-own-adventure game skillfully crafted using JavaScript, HTML, and CSS.
 
 #### Explore the Cosmos, Salvage Your Destiny
 In this unique experience, users step into the boots of a daring space scrapper, navigating the vast reaches of the cosmos. Your mission? Uncover the secrets of the main module of a space station, recently rediscovered floating abandoned on the edge of known space. Delve into the mysteries is just a bonus though, as answers won't stop the galaxy's greatest monster: crushing debts. 
