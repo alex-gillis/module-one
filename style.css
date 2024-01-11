@@ -64,7 +64,8 @@ body {
 }
 
 .menu {
-    width: 150px;
+    height: 99%;
+    width: 250px;
     flex: 1 1 auto;
     justify-content: flex-end;
     flex-direction: column;
