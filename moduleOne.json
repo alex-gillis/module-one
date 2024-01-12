@@ -77,11 +77,11 @@
         },
         {
           "option": "The Data Banks",
-          "nextPage": 7
+          "nextPage": 11
         },
         {
           "option": "The Bridge",
-          "nextPage": 7
+          "nextPage": 12
         }
       ]
     },
@@ -241,11 +241,14 @@
       "vitals": 0,
       "oxygen": 0,
       "profit": 0,
-      "story": "To the Markets",
+      "story": "Stepping out from the hangar into the dark, awaiting halls of the station's interior, you find yourself in the depressurized part of the module. The only sound greeting you is the rhythmic clunk of your boots magnetizing and demagnetizing to the floor as you walk. You consider whistling for a moment, but the tight confines of your helmet make you think better of that impulse.<br><br>Continuing your trek towards the markets, you follow the garishly painted arrows and signs displayed first thing through the hangar door. The halls don't surprise you – luggage floats loose from those trying to escape, and some corpses remain half-preserved in the vacuum. You sift through some of the luggage as you wander through until you reach the market proper.<br><br>Most stations you've been in had a mix of strip mall meets bazaar, and this module is no different. To your surprise, however, this is the first indication of what might have happened to the station – proof that it wasn't a quiet drifting off into the night.<br><br>Some booths that litter the hallway where people would hawk wares are riddled with blaster markings, others destroyed outright. One booth even has the destroyed remains of a security droid. Upon closer inspection, it seems that the power cell overheated or one of the cooling lines ruptured, causing a catastrophic malfunction that made its upper body explode like an egg in a microwave.<br><br>Either way, it was either extremely lucky for the attacker or something just that deadly. Regardless, you hope you won't have to find out and turn your attention towards your objective.<br><br>As you glance around, you notice some of the stores that have weathered the passage of time since the station's disappearance. Unfortunately, most of them seem to offer only trinkets and gift-shop-level items. It's the common pitfall of markets near the main hangar, trying to entice you with novelty before you embark on your journey, whether it be to stay or to leave.<br><br>On the other hand, scattered booths present themselves throughout the area. Granted, some bear the scars of an apparent skirmish that unfolded here some time ago. Yet, the intact ones, resilient against the whims of fate, might still hold something of value.",
       "choices": [
         {
-          "option": "Want to try again?",
-          "nextPage": 0
+          "option": "Try the Stores",
+          "nextPage": 7
+        },{
+          "option": "No, the Booths",
+          "nextPage": 7
         }
       ]
     },
@@ -320,6 +323,32 @@
         {
           "option": "To the Markets",
           "nextPage": 16
+        }
+      ]
+    },
+    {
+      "pageNum": 22,
+      "vitals": 0,
+      "oxygen": 0,
+      "profit": 0,
+      "story": "The Stores",
+      "choices": [
+        {
+          "option": "Want to try again?",
+          "nextPage": 0
+        }
+      ]
+    },
+    {
+      "pageNum": 23,
+      "vitals": 0,
+      "oxygen": 0,
+      "profit": 0,
+      "story": "The Booths",
+      "choices": [
+        {
+          "option": "Want to try again?",
+          "nextPage": 0
         }
       ]
     }
