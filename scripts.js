@@ -99,8 +99,8 @@ function checkLoad() {
     // checkLoad is resposible for enabling/disabling 
     // the load game button depending on if there is a file
     if (!localStorage.getItem("playerHistory")) {
-        myLoad.innerHTML = `<button class="settings" style="color: gray;">Load Game</button>`;
-        myMobileLoad.innerHTML = `<button class="mobilesettings" style="color: gray;">Load Game</button>`;
+        myLoad.innerHTML = `<button class="settings" style="color: #7D7D7D;">Load Game</button>`;
+        myMobileLoad.innerHTML = `<button class="mobilesettings" style="color: #7D7D7D;">Load Game</button>`;
     } else {
         myLoad.innerHTML = `<button class="settings" onclick="loadGame()">Load Game</button>`;
         myMobileLoad.innerHTML = `<button class="mobilesettings" onclick="loadGame()">Load Game</button>`;

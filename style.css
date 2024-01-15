@@ -1,7 +1,7 @@
 html {
     height: 100%;
-    background-color: #161616;
-    color: green;
+    background-color: #050505;
+    color: #00FA00;
     font-family: "Terminal", sans-serif;
     font-size: 20px;
     text-align: center; }
@@ -23,7 +23,7 @@ body {
 
 .title__button {
     border: none; 
-    background-color: #161616; 
+    background-color: #050505; 
     color:goldenrod; 
     font-size:16px; 
     text-align: center; 
@@ -33,15 +33,15 @@ body {
 
 .settings {
     font-size: 20px;
-    color: forestgreen;
+    color: #C7C7C7;
     border: none;
-    background-color: #161616;
+    background-color: #050505;
     padding-bottom: 10px;
 }
 
 .feedback {
     font-size: 18px;
-    color: red;
+    color: #FF6161;
 }
 
 .journal {
@@ -60,7 +60,7 @@ body {
     text-align: left;
     font-style: italic;
     border: none;
-    background-color: #161616;
+    background-color: #050505;
     padding-bottom: 10px;
 }
 
@@ -68,6 +68,7 @@ body {
     height: 99%;
     width: 250px;
     flex: 1 1 auto;
+    color: #C7C7C7;
     justify-content: flex-end;
     flex-direction: column;
     position: fixed;
@@ -80,15 +81,15 @@ body {
     height: 2%; }
 
 a:link {
-    color: rgb(0, 110, 255);
+    color: #5CA3FF;
     text-decoration: none; }
 a:visited {
-    color: rgb(0, 110, 255); }
+    color: #5CA3FF; }
 
 .hud{
     font-size: 15px; }
 .hud__health{
-    color:red; }
+    color:#FF6161; }
 .hud__oxygen{
     color: aqua; }
 .hud__profit{
@@ -98,22 +99,22 @@ a:visited {
 
 @media only screen and (max-width: 1155px) {
     .journal {
-        padding-left: 50px;
+        padding-left: 60px;
     }
 }  
 @media only screen and (max-width: 1065px) {
     .journal {
-        padding-left: 55px;
+        padding-left: 65px;
     }
 } 
 @media only screen and (max-width: 1020px) {
     .journal {
-        padding-left: 60px;
+        padding-left: 70px;
     }
 } 
 @media only screen and (max-width: 955px) {
     .journal {
-        padding-left: 75px;
+        padding-left: 85px;
     }
 } 
 @media only screen and (max-width: 900px) {
@@ -128,32 +129,32 @@ a:visited {
 }  
 @media only screen and (max-width: 795px) {
     .journal {
-        padding-left: 105px;
+        padding-left: 115px;
     }
 }  
 @media only screen and (max-width: 735px) {
     .journal {
-        padding-left: 115px;
+        padding-left: 125px;
     }
 }
 @media only screen and (max-width: 685px) {
     .journal {
-        padding-left: 125px;
+        padding-left: 135px;
     }
 }
 @media only screen and (max-width: 625px) {
     .journal {
-        padding-left: 135px;
+        padding-left: 145px;
     }
 }
 @media only screen and (max-width: 580px) {
     .journal {
-        padding-left: 145px;
+        padding-left: 155px;
     }
 }  
 @media only screen and (max-width: 515px) {
     .journal {
-        padding-left: 155px;
+        padding-left: 165px;
     }
 }
 
@@ -171,7 +172,7 @@ a:visited {
     }
 
     .mobilefeedback {
-        color: red;
+        color: #FF6161;
     }
 
     .choices {
@@ -188,9 +189,9 @@ a:visited {
         left: 0;
         bottom: 0;
         width: 100%;
-        background-color: #161616; }
+        background-color: #050505; }
     .mobilehud__health{
-        color:red;
+        color:#FF6161;
         text-align: right;
         padding-right: 10px; }
     .mobilehud__oxygen{
@@ -203,10 +204,10 @@ a:visited {
         padding-right: 10px; }
 
     .mobilesettings {
-        color: forestgreen;
+        color: #FF70A9;
         text-align: left;
         border: none;
-        background-color: #161616;
+        background-color: #050505;
         font-weight: bold;
         font-family: "Terminal", sans-serif;
         padding: 0px;
