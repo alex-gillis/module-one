@@ -77,8 +77,8 @@ function startGame(pgNum) {
 
     mySave.innerHTML = `<button class="settings" onclick="saveGame()">Save Game</button>`;
     myLoad.innerHTML = `<button class="settings" onclick="loadGame()">Load Game</button>`;
-    myMobileSave.innerHTML = `<button class="mobilesettings" onclick="saveGame()">Save Game</button>`;
-    myMobileLoad.innerHTML = `<button class="mobilesettings" onclick="loadGame()">Load Game</button>`;
+    myMobileSave.innerHTML = `<button class="mobile_settings" onclick="saveGame()">Save Game</button>`;
+    myMobileLoad.innerHTML = `<button class="mobile_settings" onclick="loadGame()">Load Game</button>`;
     checkLoad();
     popGame(pgNum);
 }
@@ -100,10 +100,10 @@ function checkLoad() {
     // the load game button depending on if there is a file
     if (!localStorage.getItem("playerHistory")) {
         myLoad.innerHTML = `<button class="settings" style="color: #7D7D7D;">Load Game</button>`;
-        myMobileLoad.innerHTML = `<button class="mobilesettings" style="color: #7D7D7D;">Load Game</button>`;
+        myMobileLoad.innerHTML = `<button class="mobile_settings" style="color: #7D7D7D;">Load Game</button>`;
     } else {
         myLoad.innerHTML = `<button class="settings" onclick="loadGame()">Load Game</button>`;
-        myMobileLoad.innerHTML = `<button class="mobilesettings" onclick="loadGame()">Load Game</button>`;
+        myMobileLoad.innerHTML = `<button class="mobile_settings" onclick="loadGame()">Load Game</button>`;
     }
 
 }
@@ -253,17 +253,17 @@ function main() {
     myOxygen         = document.getElementById("oxygen");
     myProfit         = document.getElementById("profit");
 
-    myMobileHealth   = document.getElementById("mobilehealth");
-    myMobileOxygen   = document.getElementById("mobileoxygen");
-    myMobileProfit   = document.getElementById("mobileprofit");
+    myMobileHealth   = document.getElementById("mobile_health");
+    myMobileOxygen   = document.getElementById("mobile_oxygen");
+    myMobileProfit   = document.getElementById("mobile_profit");
 
     mySave           = document.getElementById("save");
     myLoad           = document.getElementById("load"); 
     myFeedback       = document.getElementById("feedback"); 
     
-    myMobileSave     = document.getElementById("mobilesave");
-    myMobileLoad     = document.getElementById("mobileload"); 
-    myMobileFeedback = document.getElementById("mobilefeedback"); 
+    myMobileSave     = document.getElementById("mobile_save");
+    myMobileLoad     = document.getElementById("mobile_load"); 
+    myMobileFeedback = document.getElementById("mobile_feedback"); 
 
     // populating the array data from the json
     getJSONData(storyJSON, collectPages, onError);
