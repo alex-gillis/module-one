@@ -55,7 +55,7 @@
         <!--<div class="reference">Imagery</div>-->
         <div class="journal">
             <p id="story" class="story"></p>
-            <div id="choices">
+            <div class="choices" id="choices">
                 <!--Choices will replace the main menu as it comes in-->
                 <div id="title" class="title">
                     <!--Main Menu options will appear here-->
@@ -64,25 +64,30 @@
             <div class="mobilehud"> 
                 <table>
                     <tr>
+                        <th colspan="2" style="text-align: center;">
+                            <span class="mobilefeedback" id="mobilefeedback"></span>
+                        </th>
+                    </tr>
+                    <tr>
                         <th>
-                            <span id="save">
-                                <button class="mobilesettings" onclick="saveGame()">Save Game</button>
+                            <span id="mobilesave">
+                                <button class="mobilesettings" style="color: gray;">Save Game</button>
                             </span>
                         </th>
                         <th>
                             <div class="mobilehud__health">
-                                Vital Signs: <span id="health">Unknown</span>
+                                Vital Signs: <span id="mobilehealth">Unknown</span>
                             </div>
                         </th>
                     </tr> 
                     <tr>
                         <th>
-                            <span id="load">
-                                <button class="mobilesettings" onclick="loadGame()">Load Game</button>
+                            <span id="mobileload">
+                                <button class="mobilesettings" style="color: gray;">Load Game</button>
                             </span>
                         </th>
                         <th>
-                            <div class="mobilehud__oxygen">Oxygen Levels: <span id="oxygen">???%</span>
+                            <div class="mobilehud__oxygen">Oxygen Levels: <span id="mobileoxygen">???%</span>
                             </div>
                         </th>
                     </tr> 
@@ -94,7 +99,7 @@
                         </th>
                         <th>
                             <div class="mobilehud__profit">Profits: 
-                                <span id="profit">???</span> creds
+                                <span id="mobileprofit">???</span> creds
                             </div>
                         </th>
                     </tr> 

@@ -4,8 +4,12 @@ const storyJSON = './moduleOne.json';
 let myPages, myChoices, myStory;
 // referring to HTML objects associated with the character
 let myHealth, myOxygen, myProfit;
+// referring to HTML objects associated with the character for mobile
+let myMobileHealth, myMobileOxygen, myMobileProfit;
 // referring to HTML objects associated with the settings
 let mySave, myLoad, myFeedback;
+// referring to HTML objects associated with the settings for mobile
+let myMobileSave, myMobileLoad, myMobileFeedback;
 // referring to HTML objects associated with the settings
 let myTitle;
 // referring to storage page
@@ -73,6 +77,8 @@ function startGame(pgNum) {
 
     mySave.innerHTML = `<button class="settings" onclick="saveGame()">Save Game</button>`;
     myLoad.innerHTML = `<button class="settings" onclick="loadGame()">Load Game</button>`;
+    myMobileSave.innerHTML = `<button class="mobilesettings" onclick="saveGame()">Save Game</button>`;
+    myMobileLoad.innerHTML = `<button class="mobilesettings" onclick="loadGame()">Load Game</button>`;
     checkLoad();
     popGame(pgNum);
 }
@@ -94,8 +100,10 @@ function checkLoad() {
     // the load game button depending on if there is a file
     if (!localStorage.getItem("playerHistory")) {
         myLoad.innerHTML = `<button class="settings" style="color: gray;">Load Game</button>`;
+        myMobileLoad.innerHTML = `<button class="mobilesettings" style="color: gray;">Load Game</button>`;
     } else {
         myLoad.innerHTML = `<button class="settings" onclick="loadGame()">Load Game</button>`;
+        myMobileLoad.innerHTML = `<button class="mobilesettings" onclick="loadGame()">Load Game</button>`;
     }
 
 }
@@ -116,20 +124,25 @@ function popGame(pgNum) {
 
     // calculating profits
     totalProfit = myPage.profit + totalProfit;
-    myProfit.innerHTML = totalProfit;
+    myProfit.innerHTML       = totalProfit;
+    myMobileProfit.innerHTML = totalProfit;
 
     // setting vitals
     currentHealth = myPage.vitals + currentHealth;
 
     if (currentHealth >= 3) {
         myHealth.innerHTML = "Healthy";
+        myMobileHealth.innerHTML = "Healthy";
         currentHealth = 3;
     } else if (currentHealth == 2) {
         myHealth.innerHTML = "Injured";
+        myMobileHealth.innerHTML = "Injured";
     } else if (currentHealth == 1) {
         myHealth.innerHTML = "Wounded";
+        myMobileHealth.innerHTML = "Wounded";
     } else if (currentHealth <= 0) {
         myHealth.innerHTML = "Dead";
+        myMobileHealth.innerHTML = "Dead";
         // gonna have to put in whatever pgnumber it is with the appropriate death
         if (myPage.death != undefined) {
             popGame(!myPage?.death);
@@ -141,11 +154,14 @@ function popGame(pgNum) {
 
     // filling oxygen 
     currentO2 = myPage.oxygen + currentO2;
-    myOxygen.innerHTML = currentO2 + "%";
+    myOxygen.innerHTML       = currentO2 + "%";
+    myMobileOxygen.innerHTML = currentO2 + "%";
 
     if (currentO2 <= 0) {
-        myHealth.innerHTML = "Dead";
-        myOxygen.innerHTML = "Empty";
+        myHealth.innerHTML       = "Dead";
+        myOxygen.innerHTML       = "Empty";
+        myMobileHealth.innerHTML = "Dead";
+        myMobileOxygen.innerHTML = "Empty";
         // death from lack of air
         popGame(9);
     }
@@ -161,6 +177,7 @@ function popGame(pgNum) {
 
     checkLoad();
     myFeedback.innerHTML = "";
+    myMobileFeedback.innerHTML = "";
 }
 
 function saveGame() {
@@ -171,6 +188,7 @@ function saveGame() {
     // check load is for resetting the menu buttons
     checkLoad();
     myFeedback.innerHTML = "Your progess has been saved";
+    myMobileFeedback.innerHTML = "Your progess has been saved";
 }
 
 function loadGame() {
@@ -208,6 +226,7 @@ function loadGame() {
     }
 
     myFeedback.innerHTML = "Your progress has been restored";
+    myMobileFeedback.innerHTML = "Your progress has been restored";
 }
 
 function deleteSave() {
@@ -220,22 +239,31 @@ function deleteSave() {
     checkLoad();
 
     myFeedback.innerHTML = "Your progress has been deleted";
+    myMobileFeedback.innerHTML = "Your progress has been deleted";
 }
 
 function main() {
     // connecting HTML content to be populated through functions 
-    myTitle    = document.getElementById("title");
+    myTitle          = document.getElementById("title");
 
-    myChoices  = document.getElementById("choices");
-    myStory    = document.getElementById("story");
+    myChoices        = document.getElementById("choices");
+    myStory          = document.getElementById("story");
 
-    myHealth   = document.getElementById("health");
-    myOxygen   = document.getElementById("oxygen");
-    myProfit   = document.getElementById("profit");
+    myHealth         = document.getElementById("health");
+    myOxygen         = document.getElementById("oxygen");
+    myProfit         = document.getElementById("profit");
 
-    mySave     = document.getElementById("save");
-    myLoad     = document.getElementById("load"); 
-    myFeedback = document.getElementById("feedback"); 
+    myMobileHealth   = document.getElementById("mobilehealth");
+    myMobileOxygen   = document.getElementById("mobileoxygen");
+    myMobileProfit   = document.getElementById("mobileprofit");
+
+    mySave           = document.getElementById("save");
+    myLoad           = document.getElementById("load"); 
+    myFeedback       = document.getElementById("feedback"); 
+    
+    myMobileSave     = document.getElementById("mobilesave");
+    myMobileLoad     = document.getElementById("mobileload"); 
+    myMobileFeedback = document.getElementById("mobilefeedback"); 
 
     // populating the array data from the json
     getJSONData(storyJSON, collectPages, onError);

@@ -73,9 +73,9 @@ body {
     position: fixed;
     align-items: flex-end; }
 .menu__settings {
-    height: 35%; }
+    height: 37%; }
 .menu__stats {
-    height: 50%; }
+    height: 45%; }
 .menu__links {
     height: 2%; }
 
@@ -162,12 +162,20 @@ a:visited {
 
     .journal {
         width: 225px;
-        text-align: center;
+        text-align: justify;
         padding-top: 10px;
         padding-left: 10px;
         padding-right: 10px;
         padding-bottom: 100px;
         margin-left: 0%;
+    }
+
+    .mobilefeedback {
+        color: red;
+    }
+
+    .choices {
+        text-align: center;
     }
 
     .hud { display: none; }
@@ -180,7 +188,6 @@ a:visited {
         left: 0;
         bottom: 0;
         width: 100%;
-        font-size: 15px;
         background-color: #161616; }
     .mobilehud__health{
         color:red;
@@ -202,13 +209,13 @@ a:visited {
         background-color: #161616;
         font-weight: bold;
         font-family: "Terminal", sans-serif;
-        font-size: 15px;
         padding: 0px;
         padding-left: 10px;
+        font-size: 20px;
     }
     
     table {
-        font-size: 15px;
+        padding-top: 5px;
         text-align: left;
         width: 100%;
     }
