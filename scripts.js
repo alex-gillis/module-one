@@ -186,9 +186,9 @@ function loadGame() {
         let playProg = JSON.parse(localStorage.getItem("playerHistory"));
         // playProg.length = playProg.length - 1;
         let checkProg = playProg.pop();
-        console.log("Where the player has been...  " + playersTrail);
-        console.log("Where the player has been...  " + playProg);
-        console.log(checkProg);
+        // console.log("Where the player has been...  " + playersTrail);
+        // console.log("Where the player has been...  " + playProg);
+        // console.log(checkProg);
 
         for (const myProg of playProg) {
             let progress = myPages[myProg];

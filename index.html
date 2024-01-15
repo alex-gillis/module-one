@@ -7,16 +7,6 @@
         <title>Scavenging Module One</title>
     </head>
     <body>
-        <!--<div class="reference">Imagery</div>-->
-        <div class="journal">
-            <p id="story" class="story"></p>
-            <div id="choices">
-                <!--Choices will replace the main menu as it comes in-->
-                <div id="title" class="title">
-                    <!--Main Menu options will appear here-->
-                </div>
-            </div>
-        </div>
         <div class="menu">
             <div class="menu__settings">
                 <p>
@@ -29,6 +19,11 @@
                     <br>
                     <span id="load">
                         <button class="settings" style="color: gray;">Load Game</button>
+                    </span>
+                    <br> 
+                    <br>
+                    <span id="new">
+                        <button class="settings" onclick="startGame(0)">New Game</button>
                     </span>
                     <br> 
                     <br>
@@ -57,6 +52,55 @@
                 </footer> 
             </div>
         </div> 
+        <!--<div class="reference">Imagery</div>-->
+        <div class="journal">
+            <p id="story" class="story"></p>
+            <div id="choices">
+                <!--Choices will replace the main menu as it comes in-->
+                <div id="title" class="title">
+                    <!--Main Menu options will appear here-->
+                </div>
+            </div>
+            <div class="mobilehud"> 
+                <table>
+                    <tr>
+                        <th>
+                            <span id="save">
+                                <button class="mobilesettings" onclick="saveGame()">Save Game</button>
+                            </span>
+                        </th>
+                        <th>
+                            <div class="mobilehud__health">
+                                Vital Signs: <span id="health">Unknown</span>
+                            </div>
+                        </th>
+                    </tr> 
+                    <tr>
+                        <th>
+                            <span id="load">
+                                <button class="mobilesettings" onclick="loadGame()">Load Game</button>
+                            </span>
+                        </th>
+                        <th>
+                            <div class="mobilehud__oxygen">Oxygen Levels: <span id="oxygen">???%</span>
+                            </div>
+                        </th>
+                    </tr> 
+                    <tr>
+                        <th>
+                            <span id="delete">
+                                <button class="mobilesettings" onclick="deleteSave()">Delete Save</button>
+                            </span>
+                        </th>
+                        <th>
+                            <div class="mobilehud__profit">Potential Profits: 
+                                <span id="profit">???</span> creds
+                            </div>
+                        </th>
+                    </tr> 
+                </table>
+            </div>
+        </div>
         <script type="text/javascript" src="./scripts.js"></script>  
     </body>
 </html>
