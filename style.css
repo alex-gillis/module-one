@@ -94,6 +94,8 @@ a:visited {
 .hud__profit{
     color:goldenrod; }
 
+.mobilehud { display: none; }
+
 @media only screen and (max-width: 1155px) {
     .journal {
         padding-left: 50px;
@@ -210,8 +212,5 @@ a:visited {
         text-align: left;
         width: 100%;
     }
-    
-    th{
-        width: 50%;
-    }
+    th{ width: 50%; }
 }
