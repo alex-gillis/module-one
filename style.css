@@ -73,9 +73,9 @@ body {
     position: fixed;
     align-items: flex-end; }
 .menu__settings {
-    height: 37%; }
+    height: 35%; }
 .menu__stats {
-    height: 45%; }
+    height: 50%; }
 .menu__links {
     height: 2%; }
 
