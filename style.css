@@ -49,7 +49,6 @@ body {
     flex: 9 1 auto;
     text-align: left;
     padding-top: 10px;
-    padding-left: 35px;
     padding-right: 10px;
     margin-left: 18%;
 }
@@ -97,9 +96,14 @@ a:visited {
 
 .mobilehud { display: none; }
 
+@media only screen and (max-width: 1240px) {
+    .journal {
+        padding-left: 25px;
+    }
+}  
 @media only screen and (max-width: 1155px) {
     .journal {
-        padding-left: 60px;
+        padding-left: 50px;
     }
 }  
 @media only screen and (max-width: 1065px) {
