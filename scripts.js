@@ -105,7 +105,6 @@ function checkLoad() {
         myLoad.innerHTML = `<button class="settings" onclick="loadGame()">Load Game</button>`;
         myMobileLoad.innerHTML = `<button class="mobile_settings" onclick="loadGame()">Load Game</button>`;
     }
-
 }
 
 function popGame(pgNum) {
@@ -124,25 +123,20 @@ function popGame(pgNum) {
 
     // calculating profits
     totalProfit = myPage.profit + totalProfit;
-    myProfit.innerHTML       = totalProfit;
-    myMobileProfit.innerHTML = totalProfit;
+    popProfit(totalProfit);
 
     // setting vitals
     currentHealth = myPage.vitals + currentHealth;
 
     if (currentHealth >= 3) {
-        myHealth.innerHTML = "Healthy";
-        myMobileHealth.innerHTML = "Healthy";
+        popHealth("Healthy");
         currentHealth = 3;
     } else if (currentHealth == 2) {
-        myHealth.innerHTML = "Injured";
-        myMobileHealth.innerHTML = "Injured";
+        popHealth("Injured");
     } else if (currentHealth == 1) {
-        myHealth.innerHTML = "Wounded";
-        myMobileHealth.innerHTML = "Wounded";
+        popHealth("Wounded");
     } else if (currentHealth <= 0) {
-        myHealth.innerHTML = "Dead";
-        myMobileHealth.innerHTML = "Dead";
+        popHealth("Dead");
         // gonna have to put in whatever pgnumber it is with the appropriate death
         if (myPage.death != undefined) {
             popGame(!myPage?.death);
@@ -154,14 +148,11 @@ function popGame(pgNum) {
 
     // filling oxygen 
     currentO2 = myPage.oxygen + currentO2;
-    myOxygen.innerHTML       = currentO2 + "%";
-    myMobileOxygen.innerHTML = currentO2 + "%";
+    popOxygen(currentO2 + "%");
 
     if (currentO2 <= 0) {
-        myHealth.innerHTML       = "Dead";
-        myOxygen.innerHTML       = "Empty";
-        myMobileHealth.innerHTML = "Dead";
-        myMobileOxygen.innerHTML = "Empty";
+        popHealth("Dead");
+        popOxygen("Empty");
         // death from lack of air
         popGame(9);
     }
@@ -176,8 +167,7 @@ function popGame(pgNum) {
     // console.log("Where the player has been...  " + playersTrail);
 
     checkLoad();
-    myFeedback.innerHTML = "";
-    myMobileFeedback.innerHTML = "";
+    popFeedback("");
 }
 
 function saveGame() {
@@ -187,8 +177,7 @@ function saveGame() {
 
     // check load is for resetting the menu buttons
     checkLoad();
-    myFeedback.innerHTML = "Your progess has been saved";
-    myMobileFeedback.innerHTML = "Your progess has been saved";
+    popFeedback("Your progess has been saved");
 }
 
 function loadGame() {
@@ -209,24 +198,23 @@ function loadGame() {
         // console.log(checkProg);
 
         for (const myProg of playProg) {
-            let progress = myPages[myProg];
+            const PROGRESS = myPages[myProg];
             
-            currentHealth = progress.vitals + currentHealth;
-            currentO2 = progress.oxygen + currentO2;
-            totalProfit = progress.profit + totalProfit;
+            currentHealth = PROGRESS.vitals + currentHealth;
+            currentO2 = PROGRESS.oxygen + currentO2;
+            totalProfit = PROGRESS.profit + totalProfit;
         }
 
-        let progress = myPages[checkProg];
-        currentHealth = currentHealth - progress.vitals;
-        currentO2 = currentO2 - progress.oxygen;
-        totalProfit = totalProfit - progress.profit;
+        const PROGRESS = myPages[checkProg];
+        currentHealth = currentHealth - PROGRESS.vitals;
+        currentO2 = currentO2 - PROGRESS.oxygen;
+        totalProfit = totalProfit - PROGRESS.profit;
 
         popGame(localStorage.getItem("pageNumber"));
         startGame(localStorage.getItem("pageNumber"));
     }
 
-    myFeedback.innerHTML = "Your progress has been restored";
-    myMobileFeedback.innerHTML = "Your progress has been restored";
+    popFeedback("Your progress has been restored");
 }
 
 function deleteSave() {
@@ -234,12 +222,31 @@ function deleteSave() {
     localStorage.clear();
     // resets the menu buttons
     // has existing game is for the title screen
-    hasExistingGame()
+    hasExistingGame();
     // check load is for the menu buttons
     checkLoad();
 
-    myFeedback.innerHTML = "Your progress has been deleted";
-    myMobileFeedback.innerHTML = "Your progress has been deleted";
+    popFeedback("Your progress has been deleted");
+}
+
+function popFeedback(result) {
+    myFeedback.innerHTML = result;
+    myMobileFeedback.innerHTML = result;
+}
+
+function popHealth(result) {
+    myHealth.innerHTML = result;
+    myMobileHealth.innerHTML = result;
+}
+
+function popOxygen(result) {
+    myOxygen.innerHTML = result;
+    myMobileOxygen.innerHTML = result;
+}
+
+function popProfit(result) {
+    myProfit.innerHTML = result;
+    myMobileProfit.innerHTML = result;
 }
 
 function main() {
