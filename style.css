@@ -103,18 +103,23 @@ a:visited {
 }
 
 .tooltip .tooltiptext {
+    display: none;
     visibility: hidden;
-    width: 400px;
+    width: 300px;
     background-color: black;
     color: #fff;
     text-align: center;
     border-radius: 6px;
+    word-wrap: normal;
     padding: 5px 0;
     position: absolute;
     z-index: 1;
+    top: -5px;
+    right: 105%;
 }
 
 .tooltip:hover .tooltiptext {
+    display: inline-block;
     visibility: visible;
 }
 
@@ -242,6 +247,9 @@ a:visited {
     }
 
     .tooltip .tooltiptext {
-        width: 200px;
+        width: 180px;
+        top: 100%;
+        left: 50%;
+        margin-left: -60px;
     }
 }

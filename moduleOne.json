@@ -176,7 +176,7 @@
       "vitals": 0,
       "oxygen": 0,
       "profit": 0,
-      "story": "Go to the Data Banks",
+      "story": "The Data Banks are not finished yet",
       "choices": [
         {
           "option": "Want to try again?",
@@ -189,7 +189,7 @@
       "vitals": 0,
       "oxygen": 0,
       "profit": 0,
-      "story": "Go to the Bridge",
+      "story": "The Bridge is not finished yet",
       "choices": [
         {
           "option": "Want to try again?",
@@ -202,7 +202,7 @@
       "vitals": 0,
       "oxygen": 0,
       "profit": 0,
-      "story": "Enter the Officers' Quarters",
+      "story": "Entering the Officers' Quarters is not finished yet",
       "choices": [
         {
           "option": "Want to try again?",
@@ -215,7 +215,7 @@
       "vitals": 0,
       "oxygen": 0,
       "profit": 0,
-      "story": "Wait, what was that about scortch marks?",
+      "story": "Questioning about the Scortch Marks is not finished yet",
       "choices": [
         {
           "option": "Carefully enter the Officers' Quarters",
@@ -228,7 +228,7 @@
       "vitals": 0,
       "oxygen": 0,
       "profit": 0,
-      "story": "Carefully enter the Officers' Quarters",
+      "story": "Carefully entering the Officers' Quarters is not finished yet",
       "choices": [
         {
           "option": "Want to try again?",
@@ -273,7 +273,7 @@
       "vitals": 0,
       "oxygen": -6.5,
       "profit": 3000,
-      "story": "Looking back up to the ceiling, you leap off the floor, propelling yourself towards the ship without bothering to use any of your limited jump juice for course correction.<br><br>In your approach, you get a nice view of the ship. It's a faster model, not quite a fighter craft, but the wear and tear suggests it's a proper spacer's craft, not some wannabe. It's not too dissimilar to your own, now that you think about it.<br><br>Using a tiny bit of jump juice to soften the landing, you arrive at the opening to the cargo bay. The crash left the hatch slightly askew, and while repairing it would be a hassle, you don't need to worry about that.<br><br>You take out the favorite tool in your toolbox—the Space Tool for Extraterrestrial Work or S.T.E.W. for short. This cylindrical device with a control panel near the handle contains various tools in a compact design, maybe larger than a standard fire extinguisher. From an illuminator to a welder, the latter is your preferred pick for this task. The front barrel of S.T.E.W. splits into four claws, forming a containment field for a plasma blade. Carefully cutting out the hatch, you make the opening large enough to avoid squeezing through.<br><br>Crawling inward, you find the cargo bay filled with the exact kinds of treasures you're looking for. It's almost as if someone did all the work for you, stripping down what must have been the yacht you spotted still parked in the hangar. However, reality hits when you realize how badly damaged most of it is—a collection of Fabergé eggs smashed to pieces, designer clothes burned from a fuel line rupture, and fancy furniture with real wood now damaged beyond repair. All because someone didn't know how to properly secure cargo in an emergency.<br><br>Just as you're about to give up in frustration, you decide to check the cockpit, crawling your way through the bent halls to the main deck where the pilot seems to have had a real tough time. Much of their body is reduced to mush, making it difficult to identify the species. There are some human-looking limb arrangements, but then there's this weird tail of black carapace—unidentifiable.<br><br>Disappointing, but you're not ready to be discouraged yet. As you turn to crawl back out, you notice a small box floating in a corner. Upon investigation, you find it contains a strange glass chalice. This could be worth something.",
+      "story": "Looking back up to the ceiling, you leap off the floor, propelling yourself towards the ship without bothering to use any of your limited jump juice for course correction.<br><br>In your approach, you get a nice view of the ship. It's a faster model, not quite a fighter craft, but the wear and tear suggests it's a proper spacer's craft, not some wannabe. It's not too dissimilar to your own, now that you think about it.<br><br>Using a tiny bit of jump juice to soften the landing, you arrive at the opening to the cargo bay. The crash left the hatch slightly askew, and while repairing it would be a hassle, you don't need to worry about that.<br><br>You take out the favorite tool in your toolbox—the <div class='tooltip'>Space Tool for Extraterrestrial Work or S.T.E.W.<span class='tooltiptext'>This cylindrical device has a control panel near the handle contains various tools in a compact design, maybe larger than a standard fire extinguisher. From an illuminator to a welder, the latter is your preferred pick for this task.</span></div> The front barrel of S.T.E.W. splits into four claws, forming a containment field for a plasma blade. Carefully cutting out the hatch, you make the opening large enough to avoid squeezing through.<br><br>Crawling inward, you find the cargo bay filled with the exact kinds of treasures you're looking for. It's almost as if someone did all the work for you, stripping down what must have been the yacht you spotted still parked in the hangar. However, reality hits when you realize how badly damaged most of it is—a collection of Fabergé eggs smashed to pieces, designer clothes burned from a fuel line rupture, and fancy furniture with real wood now damaged beyond repair. All because someone didn't know how to properly secure cargo in an emergency.<br><br>Just as you're about to give up in frustration, you decide to check the cockpit, crawling your way through the bent halls to the main deck where the pilot seems to have had a real tough time. Much of their body is reduced to mush, making it difficult to identify the species. There are some human-looking limb arrangements, but then there's this weird tail of black carapace—unidentifiable.<br><br>Disappointing, but you're not ready to be discouraged yet. As you turn to crawl back out, you notice a small box floating in a corner. Upon investigation, you find it contains a strange glass chalice. This could be worth something.",
       "choices": [
         {
           "option": "To the Markets",
@@ -289,7 +289,7 @@
       "vitals": 0,
       "oxygen": -6,
       "profit": 500,
-      "story": "Instead of trying to find a path around the rubble of destroyed ships that block your way to the yacht, you stretch your legs and take a running jump towards the more expensive starship. With artificial gravity inactive on the station, your leap lacks the usual graceful arc of a normal jump. Instead, you propel yourself forward, overshooting the yacht slightly—fortunately, that's what your jump juice is for.<br><br>Using a small burst of air from your suit's propulsion system, you correct your trajectory to land on the side of the yacht. As you take out the favorite tool in your toolbox—the Space Tool for Extraterrestrial Work or S.T.E.W. for short—you notice that the closest hatch is already cut open, similar to a tool like S.T.E.W.<br><br>This is never a good sign, and out of habit, you approach with a hand on the cylindrical tool's handle. It's not necessarily a weapon, but it's better than nothing. Worry sinks into your gut like a stone, wondering if another scavenger beat you to the station, and you simply missed their vessel. There could be a hidden danger that caused the station's fall, like a horde of killer robots hellbent on rending flesh from bone, waiting inside for you.<br><br>But no, nothing could be worse than what you see when you look inside. Nothing fills you with more horror than spotting that the interior of the yacht is stripped bare of anything of value. You frantically check the drawers of the remaining furniture, any closets in the rooms, under the floating beds—no longer connected to the flooring as looters even took some of the carpeting.<br><br>You manage to find a couple of knick-knacks the looters must've missed, but so far, nothing to make this trip worthwhile. The air in your suit feels thinner as you weigh your options in the eerie silence of the stripped yacht.",
+      "story": "Instead of trying to find a path around the rubble of destroyed ships that block your way to the yacht, you stretch your legs and take a running jump towards the more expensive starship. With artificial gravity inactive on the station, your leap lacks the usual graceful arc of a normal jump. Instead, you propel yourself forward, overshooting the yacht slightly—fortunately, that's what your jump juice is for.<br><br>Using a small burst of air from your suit's propulsion system, you correct your trajectory to land on the side of the yacht. As you take out the favorite tool in your toolbox—the <div class='tooltip'>Space Tool for Extraterrestrial Work or S.T.E.W.<span class='tooltiptext'>This cylindrical device has a control panel near the handle contains various tools in a compact design, maybe larger than a standard fire extinguisher. From an illuminator to a welder, the latter is your preferred pick for this task.</span></div> for short.—you notice that the closest hatch is already cut open, similar to a tool like S.T.E.W.<br><br>This is never a good sign, and out of habit, you approach with a hand on the cylindrical tool's handle. It's not necessarily a weapon, but it's better than nothing. Worry sinks into your gut like a stone, wondering if another scavenger beat you to the station, and you simply missed their vessel. There could be a hidden danger that caused the station's fall, like a horde of killer robots hellbent on rending flesh from bone, waiting inside for you.<br><br>But no, nothing could be worse than what you see when you look inside. Nothing fills you with more horror than spotting that the interior of the yacht is stripped bare of anything of value. You frantically check the drawers of the remaining furniture, any closets in the rooms, under the floating beds—no longer connected to the flooring as looters even took some of the carpeting.<br><br>You manage to find a couple of knick-knacks the looters must've missed, but so far, nothing to make this trip worthwhile. The air in your suit feels thinner as you weigh your options in the eerie silence of the stripped yacht.",
       "choices": [
         {
           "option": "To the Markets",
@@ -331,7 +331,7 @@
       "vitals": 0,
       "oxygen": 0,
       "profit": 0,
-      "story": "The Stores",
+      "story": "The Stores are not finished yet",
       "choices": [
         {
           "option": "Want to try again?",
@@ -344,7 +344,7 @@
       "vitals": 0,
       "oxygen": 0,
       "profit": 0,
-      "story": "The Booths",
+      "story": "The Booths are not finished yet",
       "choices": [
         {
           "option": "Want to try again?",
