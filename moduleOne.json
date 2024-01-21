@@ -245,10 +245,10 @@
       "choices": [
         {
           "option": "Try the Stores",
-          "nextPage": 7
+          "nextPage": 22
         },{
           "option": "No, the Booths",
-          "nextPage": 7
+          "nextPage": 23
         }
       ]
     },
@@ -329,13 +329,13 @@
     {
       "pageNum": 22,
       "vitals": 0,
-      "oxygen": 0,
-      "profit": 0,
-      "story": "The Stores are not finished yet",
+      "oxygen": -1.5,
+      "profit": 5,
+      "story": "As you stroll down the line of shops, scanning for anything that catches your eye, you encounter some familiar names from other stations, ranging from Spacer's Choice to Orbital Options. Among the eclectic assortment, you spot a stuffed version of an <div class='tooltip'>Astrokraken<span class='tooltiptext'>The Astrokraken, a mysterious and colossal space-dwelling entity, bears a striking resemblance to a squid but has adapted to the vast expanses of the cosmic depths. Renowned for its elusive nature and formidable presence, this enigmatic creature is infamous for its recurrent attacks on shipping routes along the outersphere. Its disruptive activities have led to the necessity of increased patrols in these remote regions, as the Astrokraken's unpredictable movements pose a constant threat to interstellar navigation and trade. The mere mention of its name sends shivers through the spines of those who brave the outer reaches of space.</span></div>. Curiosity gets the better of you, and you give it an experimental squeeze. Despite its almost cute appearance, the reminder of the creature's destructive capabilities dampens any whimsical thoughts.<br><br>Keeping the stuffed Astrokraken as a momentary companion in your search for loot, you saunter past what initially appears to be another damaged storefront. The security gate lies in ruins, seemingly melted in a fierce firefight. However, upon closer inspection, you realize that beyond the initial few feet, the store appears to be untouched. A closer look reveals that this is, in fact, a robotics shop.<br><br>Casting a glance at your dodecagoned-limbed companion, you deactivate your mag-boots and float through the melted hole in the security gate. Inside, the night-vision of your helmet illuminates the shop, still filled with scattered robotics. It appears most of the chaos stemmed from the station's <div class='tooltip'>gravity generators<span class='tooltiptext'>A common system on most space-faring vessels meant for habitation. And also one of the first things to fail during a catastrophe as power is usually routed away from non-vital systems. Which always struck you as odd because, from experience, panicking in zero-gs is usually more difficult than standard gravity.</span></div> going haywire during the catastrophe.<br><br>You explain to the kraken perched on your shoulder that many storefronts don't magnetize their models, especially if they want to showcase the potential capabilities to consumers. Giving the chance for this scattering of robotic parts.<br><br>Approaching what your trained eye deems the most promising model, a <div class='tooltip'>Quantum Voyager<span class='tooltiptext'>The Voyager has a spherical core encased in a shimmering metallic exoskeleton with extendable arms and legs. Its surface is adorned with pulsating LED lights that change colors based on its operational state. The central core emits a soft, ethereal glow, and its limbs are equipped with advanced tools and sensors for versatile space missions.</span></div>, you find it in surprisingly good condition. Giving it a few taps, you notice a flicker from a long-dead battery attempting to come back to life. However, your attention is diverted as you spot something odd...",
       "choices": [
         {
-          "option": "Want to try again?",
-          "nextPage": 0
+          "option": "Proceed",
+          "nextPage": 24
         }
       ]
     },
@@ -348,6 +348,41 @@
       "choices": [
         {
           "option": "Want to try again?",
+          "nextPage": 0
+        }
+      ]
+    },
+    {
+      "pageNum": 24,
+      "vitals": 0,
+      "oxygen": -0.25,
+      "profit": 0,
+      "story": "As you turn the Quantum Voyager over to inspect the back of its chassis, you discover a disconcerting sight - the place where the legs should extend out has been torn out, and the inner components are stripped as if scavenged for valuable scraps. Oddly, the valuables such as optic cables and fine motors remain intact, with only the components constituting the robot's ''brain'' and the cooling systems missing.<br><br>A systematic pattern emerges as you survey the other nearby drones – several others have been dissected in the same precise manner, focusing on the weakest point closest to the operating systems. Some are missing additional crucial parts, like their main motors for towing capacity or engines.<br><br>Just as you contemplate salvaging valuable components from the dismantled drones, a dreaded sight catches your attention – a growing red light towards the end of the room. A red optic focuses on you, instilling fear like a knife to the heart. You recognize it as a robot crafted from various exoskeletons, robots, and vehicles, commonly referred to as <div class='tooltip'>Frankenstiens, Singularities or Evolved Bots<span class='tooltiptext'>. These creations, born from a flaw in survival protocols, scavenged from other machines to survive, often becoming dangerously advanced and perceiving anything as a threat.</span></div><br><br>Now faced with an impending threat, you weigh your options:<br><br>Run: Attempting to escape, hoping it won't consider your suit worth chasing. Although, these evolved bots seldom pass up an opportunity to acquire fresh technology.<br><br>Fight: Take on the evolved bot in combat. However, given its hodgepodge construction, you're unsure of its physical capabilities.<br><br>Pretend to be Insignificant: Try to deceive it by pretending not to be anything special, maybe even turning off your suit systems to avoid emitting a power reading. This is a risky move, and if discovered, you might end up having to run anyway.<br><br>What will you choose?",
+      "choices": [
+        {
+          "option": "Flee from it",
+          "nextPage": 0
+        },{
+          "option": "Fight it",
+          "nextPage": 0
+        },{
+          "option": "Play Possum",
+          "nextPage": 0
+        }
+      ]
+    },
+    {
+      "pageNum": 25,
+      "vitals": 0,
+      "oxygen": -0.25,
+      "profit": 0,
+      "story": "Without wasting a moment, you hurl the husk of the Quantum Voyager at the Frankensteined bot, not bothering to check if it connects. The sudden movement causes the astrokraken to tumble from your shoulder, perhaps a valiant sacrifice on the plush companion's behalf. However, you can't dwell on it now as you sprint away.<br><br>Diving through the hole melted in the gate, you contemplate your next move.<br><br>Retreat to the Ship: Consider heading back to your ship, regrouping, and maybe exploring another route in the hope of finding the profits you seek.<br>Dash Deeper into the Station: Opt to plunge deeper into the station, hoping to discover something that can be used to confront and defeat the relentless bot.",
+      "choices": [
+        {
+          "option": "Back towards the ship",
+          "nextPage": 0
+        },{
+          "option": "Dash deeper into the station",
           "nextPage": 0
         }
       ]
