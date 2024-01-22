@@ -123,6 +123,13 @@ a:visited {
     visibility: visible;
 }
 
+.reference { 
+    height: 100%;
+    width: 35%;
+    max-width: 405px;
+    display: none;
+}
+
 @media only screen and (max-width: 1240px) {
     .journal {
         padding-left: 25px;
@@ -186,6 +193,8 @@ a:visited {
 
 @media only screen and (max-width: 480px) {
     .menu { display: none; }
+
+    .reference { display: none; }
 
     .journal {
         width: 225px;

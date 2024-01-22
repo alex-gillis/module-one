@@ -361,13 +361,13 @@
       "choices": [
         {
           "option": "Flee from it",
-          "nextPage": 0
+          "nextPage": 25
         },{
           "option": "Fight it",
-          "nextPage": 0
+          "nextPage": 7
         },{
           "option": "Play Possum",
-          "nextPage": 0
+          "nextPage": 7
         }
       ]
     },
@@ -380,10 +380,10 @@
       "choices": [
         {
           "option": "Back towards the ship",
-          "nextPage": 0
+          "nextPage": 7
         },{
           "option": "Dash deeper into the station",
-          "nextPage": 0
+          "nextPage": 7
         }
       ]
     }
