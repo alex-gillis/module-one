@@ -26,6 +26,9 @@ let totalProfit = 0;
 // ensures that the same page is not printed multiple times when retracing steps
 let playersTrail = [];
 
+// special ending options 
+let hasKraken = false;
+
 function getJSONData(retrieveScript, success, failure) {
     // retrieval of the JSON file
     fetch(retrieveScript)
@@ -148,6 +151,9 @@ function popGame(pgNum) {
     // deathChecker checks for custom deaths
     deathChecker(pgNum);
 
+    // checking for specific circumsances for special ending varients
+    specialChecker();
+
     // keeping track of where the player has been
     playersTrail.push(pgNum);
     // console.log("Where the player has been...  " + playersTrail);
@@ -265,9 +271,17 @@ function oxygenChecker() {
 }
 
 function deathChecker(pgNum) {
-    if (specialDeaths.includes(pgNum) === true) {
+    if (specialDeaths.includes(pgNum)) {
         popHealth("Dead");
         popOxygen("Empty");
+    }
+}
+
+function specialChecker() {
+    if (playersTrail.includes(22) || playersTrail.includes(31)) {
+        hasKraken = true;
+    } else if (playersTrail.includes(25) || playersTrail.includes(30)) {
+        hasKraken = false;
     }
 }
 

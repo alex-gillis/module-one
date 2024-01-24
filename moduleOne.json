@@ -357,7 +357,7 @@
       "vitals": 0,
       "oxygen": -0.25,
       "profit": 0,
-      "story": "As you turn the Quantum Voyager over to inspect the back of its chassis, you discover a disconcerting sight - the place where the legs should extend out has been torn out, and the inner components are stripped as if scavenged for valuable scraps. Oddly, the valuables such as optic cables and fine motors remain intact, with only the components constituting the robot's ''brain'' and the cooling systems missing.<br><br>A systematic pattern emerges as you survey the other nearby drones – several others have been dissected in the same precise manner, focusing on the weakest point closest to the operating systems. Some are missing additional crucial parts, like their main motors for towing capacity or engines.<br><br>Just as you contemplate salvaging valuable components from the dismantled drones, a dreaded sight catches your attention – a growing red light towards the end of the room. A red optic focuses on you, instilling fear like a knife to the heart. You recognize it as a robot crafted from various exoskeletons, robots, and vehicles, commonly referred to as <div class='tooltip'>Frankenstiens, Singularities or Evolved Bots<span class='tooltiptext'>. These creations, born from a flaw in survival protocols, scavenged from other machines to survive, often becoming dangerously advanced and perceiving anything as a threat.</span></div><br><br>Now faced with an impending threat, you weigh your options:<br><br>Run: Attempting to escape, hoping it won't consider your suit worth chasing. Although, these evolved bots seldom pass up an opportunity to acquire fresh technology.<br><br>Fight: Take on the evolved bot in combat. However, given its hodgepodge construction, you're unsure of its physical capabilities.<br><br>Pretend to be Insignificant: Try to deceive it by pretending not to be anything special, maybe even turning off your suit systems to avoid emitting a power reading. This is a risky move, and if discovered, you might end up having to run anyway.<br><br>What will you choose?",
+      "story": "As you turn the Quantum Voyager over to inspect the back of its chassis, you discover a disconcerting sight - the place where the legs should extend out has been torn out, and the inner components are stripped as if scavenged for valuable scraps. Oddly, the valuables such as optic cables and fine motors remain intact, with only the components constituting the robot's ''brain'' and the cooling systems missing.<br><br>A systematic pattern emerges as you survey the other nearby drones – several others have been dissected in the same precise manner, focusing on the weakest point closest to the operating systems. Some are missing additional crucial parts, like their main motors for towing capacity or engines.<br><br>Just as you contemplate salvaging valuable components from the dismantled drones, a dreaded sight catches your attention – a growing red light towards the end of the room. A red optic focuses on you, instilling fear like a knife to the heart. You recognize it as a robot crafted from various exoskeletons, robots, and vehicles, commonly referred to as <div class='tooltip'>Frankenstiens, Singularities or Evolved Bots. <span class='tooltiptext'>These creations, born from a flaw in survival protocols, scavenged from other machines to survive, often becoming dangerously advanced and perceiving anything as a threat.</span></div><br><br>Now faced with an impending threat, you weigh your options:<br><br>Run: Attempting to escape, hoping it won't consider your suit worth chasing. Although, these evolved bots seldom pass up an opportunity to acquire fresh technology.<br><br>Fight: Take on the evolved bot in combat. However, given its hodgepodge construction, you're unsure of its physical capabilities.<br><br>Pretend to be Insignificant: Try to deceive it by pretending not to be anything special, maybe even turning off your suit systems to avoid emitting a power reading. This is a risky move, and if discovered, you might end up having to run anyway.<br><br>What will you choose?",
       "choices": [
         {
           "option": "Flee from it",
@@ -380,14 +380,14 @@
       "choices": [
         {
           "option": "Back towards the ship",
-          "nextPage": 7
+          "nextPage": 32
         },
         {
           "option": "Dash deeper into the station",
-          "nextPage": 7
+          "nextPage": 33
         },{
           "option": "Leave no man behind! Return for the astrokraken",
-          "nextPage": 7
+          "nextPage": 31
         }
       ]
     },
@@ -455,11 +455,11 @@
       "choices": [
         {
           "option": "Back towards the ship",
-          "nextPage": 7
+          "nextPage": 32
         },
         {
           "option": "Dash deeper into the station",
-          "nextPage": 7
+          "nextPage": 33
         }
       ]
     },
@@ -472,11 +472,28 @@
       "choices": [
         {
           "option": "Back towards the ship",
-          "nextPage": 7
+          "nextPage": 32
         },
         {
           "option": "Dash deeper into the station",
-          "nextPage": 7
+          "nextPage": 35
+        }
+      ]
+    },
+    {
+      "pageNum": 32,
+      "vitals": 0,
+      "oxygen": -5.3,
+      "profit": 0,
+      "story": "With the Frankenstein bot hot on your heels, you sprint back towards your freighter.<br><br>Though hauling salvage in zero-g isn't exactly the best workout for building muscle, your endurance and agility are anything but lacking. Activating your helmet's night vision, you dive forward, utilizing the jump juice to propel yourself through the halls at an accelerated speed. The urgent, rhythmic stabs into the metal flooring behind you signal the relentless pursuit of the droid.<br><br>Upon reaching the hangar, surrounded by the wreckage of destroyed ships, you quickly contact V.I. through your comm system, instructing her to open the entrance ramp. A brief glance over your shoulder reveals the relentless droid, scaling the hangar wall in a desperate attempt to reach your ship. It seems to have realized your destination and is determined to leap onto the vessel.<br><br>Fortunately, this pursuit gives you a window to reach the ramp. You hope that the ship's hull will serve as a protective barrier between you and the cannibalistic droid. The moment you settle into the pilot's seat, you engage the retrothrusters to reverse out of the hangar.<br><br>Regrettably, through the front viewing screen, you can only watch as the droid leaps and lands just before you. Its red glowing eye focuses on you, seemingly delighted at the prospect of fresh working electronics.<br><br>The urgency is clear – you need to get it off. NOW.",
+      "choices": [
+        {
+          "option": "Try to scrap it off",
+          "nextPage": 33
+        },
+        {
+          "option": "Push the thrusters full speed and suddenly stop",
+          "nextPage": 34
         }
       ]
     }
