@@ -375,14 +375,18 @@
       "pageNum": 25,
       "vitals": 0,
       "oxygen": -0.25,
-      "profit": 0,
+      "profit": -5,
       "story": "Without wasting a moment, you hurl the husk of the Quantum Voyager at the Frankensteined bot, not bothering to check if it connects. The sudden movement causes the astrokraken to tumble from your shoulder, perhaps a valiant sacrifice on the plush companion's behalf. However, you can't dwell on it now as you sprint away.<br><br>Diving through the hole melted in the gate, you contemplate your next move.<br><br>Retreat to the Ship: Consider heading back to your ship, regrouping, and maybe exploring another route in the hope of finding the profits you seek.<br>Dash Deeper into the Station: Opt to plunge deeper into the station, hoping to discover something that can be used to confront and defeat the relentless bot.",
       "choices": [
         {
           "option": "Back towards the ship",
           "nextPage": 7
-        },{
+        },
+        {
           "option": "Dash deeper into the station",
+          "nextPage": 7
+        },{
+          "option": "Leave no man behind! Return for the astrokraken",
           "nextPage": 7
         }
       ]
@@ -439,6 +443,40 @@
         {
           "option": "Want to try again?",
           "nextPage": 0
+        }
+      ]
+    },
+    {
+      "pageNum": 30,
+      "vitals": -1,
+      "oxygen": -0.1,
+      "profit": -5,
+      "story": "Fear finally takes hold, and you realize the gravity of your decision. Like attempting to exit a conversation with your Uncle Spanky, you desperately try to bail. Turning your suit systems back on, you initiate a sprint to escape once more. Sensing your panic, the unsecured astrokraken valiantly flies from your shoulder, interposing itself between you and the attacking drone. Despite its brave attempt to save you, the singularity still manages to land a swipe on your back (much like your encounters with Uncle Spanky). This results in an injury that will undoubtedly scar, but you can still move.<br><br>Diving through the hole melted in the gate, you contemplate your next move.<br><br>Retreat to the Ship: Consider heading back to your ship, regrouping, and maybe exploring another route in the hope of finding the profits you seek.<br>Dash Deeper into the Station: Opt to plunge deeper into the station, hoping to discover something that can be used to confront and defeat the relentless bot.",
+      "choices": [
+        {
+          "option": "Back towards the ship",
+          "nextPage": 7
+        },
+        {
+          "option": "Dash deeper into the station",
+          "nextPage": 7
+        }
+      ]
+    },
+    {
+      "pageNum": 31,
+      "vitals": -1,
+      "oxygen": -0.1,
+      "profit": 5,
+      "story": "Realizing that the brief time you've spent with the astrokraken has been some of the best on the station, you refuse to leave such a good friend behind. As your faithful companion valiantly attempts to hold off your pursuer, you abruptly change direction. Halting like an archaeologist who forgot his hat, you snatch the astrokraken from where it fell and swiftly turn around.<br><br>Regrettably, this momentary pause opens you up to the drone, and it seizes the opportunity, slashing your side with a quick, painful strike. However, you're willing to endure great sacrifices for great friends! Sprinting away from the drone, you feel the suit self-repairing, buying you precious time to escape, even with the singularity hot on your heels.",
+      "choices": [
+        {
+          "option": "Back towards the ship",
+          "nextPage": 7
+        },
+        {
+          "option": "Dash deeper into the station",
+          "nextPage": 7
         }
       ]
     }

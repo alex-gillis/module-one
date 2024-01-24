@@ -1,5 +1,7 @@
 // the path to retrieve the JSON
 const storyJSON = './moduleOne.json';
+// tracks if player has stumbled across special deaths
+const specialDeaths = [27, 29];
 // referring to HTML objects associated with the storyline
 let myPages, myChoices, myStory;
 // referring to HTML objects associated with the character
@@ -23,9 +25,6 @@ let totalProfit = 0;
 // tracking the pages visited by characters
 // ensures that the same page is not printed multiple times when retracing steps
 let playersTrail = [];
-
-// tracks if player has stumbled across special deaths
-const specialDeaths = [27, 29];
 
 function getJSONData(retrieveScript, success, failure) {
     // retrieval of the JSON file
