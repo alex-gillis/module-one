@@ -364,10 +364,10 @@
           "nextPage": 25
         },{
           "option": "Fight it",
-          "nextPage": 7
+          "nextPage": 26
         },{
           "option": "Play Possum",
-          "nextPage": 7
+          "nextPage": 28
         }
       ]
     },
@@ -384,6 +384,61 @@
         },{
           "option": "Dash deeper into the station",
           "nextPage": 7
+        }
+      ]
+    },
+    {
+      "pageNum": 26,
+      "vitals": 0,
+      "oxygen": -0.25,
+      "profit": 0,
+      "story": "With bravery in your heart and the husk of the Voyager as your makeshift weapon, you leap toward the robotic threat, intent on smashing the plastic chassis into the cyclop's optic. The plan works well for the first couple of strikes, but two critical oversights come into play.<br><br>Firstly, the Voyager was never renowned for its durability. The plastic hull shatters in your hands upon impact with the metal exoskeleton of the Singularity. In fact, you recall there being a recall notice due to the droid's body collapsing under anything beyond Earth gravity.<br><br>Secondly, your attack relies heavily on the element of surprise, and that advantage swiftly evaporates when dealing with an enhanced droid like this Frankenstein creation.<br><br>Before you can reach for your S.T.E.W. as a last-ditch makeshift weapon, the front spike-like leg shoots out, piercing your arm and pinning you down to the floor by your bicep. Echoes of pain resonate in your helmet as, now immobilized, you helplessly witness the machine, with superior strength, extracting the desirable components from your gear.<br><br>The dire situation leaves you at the mercy of the relentless Singularity.",
+      "choices": [
+        {
+          "option": "Proceed",
+          "nextPage": 27
+        }
+      ]
+    },
+    {
+      "pageNum": 27,
+      "vitals": 0,
+      "oxygen": -0.25,
+      "profit": 0,
+      "story": "In the desolate darkness of the station, mercy is a program absent from the scavenged repertoire of the relentless droid. After stripping your suit of vital components, you attempt to limp your way back to your freighter. However, lost in the obscurity of the station with no clear path, your last remaining oxygen dwindles away.<br><br>As your breaths cease, at least you find solace in the fact that you won't face eternity alone. Your astrokraken, a faithful companion, will remain by your side for the rest of time.",
+      "choices": [
+        {
+          "option": "Want to try again?",
+          "nextPage": 0
+        }
+      ]
+    },
+    {
+      "pageNum": 28,
+      "vitals": 0,
+      "oxygen": -0.15,
+      "profit": 0,
+      "story": "In the face of the cobbled-together monstrosity, you defy the conventional options of fight or flight and choose the lesser-known third option – freeze. Like a deer in the headlights, you stand still, watching as the robotic horror advances toward you.<br><br>Immobile, you sense the vibrations through the metal flooring as the creature's mechanical legs anchor itself to prevent floating off in the anti-gravity environment. Remaining perfectly still, you even have V.I. deactivate the extra systems of your suit, including the night vision built into your helmet. The darkness of the void envelops you, leaving only the ominous glow of the red eye from the approaching droid.<br><br>In the dim light, you can just barely make out the front leg splitting into a claw, evidently intending to inspect and potentially pilfer equipment from your suit. A bead of sweat forms on your neck as you grapple with the decision to either commit to action or attempt a daring escape...",
+      "choices": [
+        {
+          "option": "Commit to the bit",
+          "nextPage": 29
+        },{
+          "option": "Bail like a coward",
+          "nextPage": 30
+        }
+      ]
+    },
+    {
+      "pageNum": 29,
+      "vitals": 0,
+      "oxygen": -0.15,
+      "profit": 0,
+      "story": "In this dire moment, you draw upon all the skills honed during high school plays. Yet, as the robot systematically extracts vital components from your suit, you come to a grim realization about the flaw in your years of theatrical practice. All those times of pretending to be a tree never quite ended well for you, and it seems this won't be any different.<br><br>As your consciousness starts to fade due to the lack of oxygen, your loyal companion, the astrokraken, offers you a comforting sentiment—the same one your mom shared after every play: ''You made one hell of a tree.''",
+      "choices": [
+        {
+          "option": "Want to try again?",
+          "nextPage": 0
         }
       ]
     }

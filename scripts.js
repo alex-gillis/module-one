@@ -24,6 +24,9 @@ let totalProfit = 0;
 // ensures that the same page is not printed multiple times when retracing steps
 let playersTrail = [];
 
+// tracks if player has stumbled across special deaths
+const specialDeaths = [27, 29];
+
 function getJSONData(retrieveScript, success, failure) {
     // retrieval of the JSON file
     fetch(retrieveScript)
@@ -121,46 +124,30 @@ function popGame(pgNum) {
         // pushKey(myChoice.nextPage, myChoice.key);
     }
 
+    // checking for restart to wipe the trail
+    if (myPage.pageNum == 0) {
+        playersTrail = [];
+        currentHealth = 3;
+        totalProfit = 0;
+        currentO2 = 100;
+    }
+
     // calculating profits
     totalProfit = myPage.profit + totalProfit;
     popProfit(totalProfit);
 
     // setting vitals
     currentHealth = myPage.vitals + currentHealth;
-
-    if (currentHealth >= 3) {
-        popHealth("Healthy");
-        currentHealth = 3;
-    } else if (currentHealth == 2) {
-        popHealth("Injured");
-    } else if (currentHealth == 1) {
-        popHealth("Wounded");
-    } else if (currentHealth <= 0) {
-        popHealth("Dead");
-        // gonna have to put in whatever pgnumber it is with the appropriate death
-        if (myPage.death != undefined) {
-            popGame(!myPage?.death);
-        } else {
-            // generic death page
-            popGame(8);
-        }
-    }
+    popHealth(currentHealth);
+    healthChecker();
 
     // filling oxygen 
     currentO2 = myPage.oxygen + currentO2;
     popOxygen(currentO2 + "%");
+    oxygenChecker();
 
-    if (currentO2 <= 0) {
-        popHealth("Dead");
-        popOxygen("Empty");
-        // death from lack of air
-        popGame(9);
-    }
-
-    // checking for restart to wipe the trail
-    if (myPage.pageNum == 0) {
-        playersTrail = [];
-    }
+    // deathChecker checks for custom deaths
+    deathChecker(pgNum);
 
     // keeping track of where the player has been
     playersTrail.push(pgNum);
@@ -247,6 +234,42 @@ function popOxygen(result) {
 function popProfit(result) {
     myProfit.innerHTML = result;
     myMobileProfit.innerHTML = result;
+}
+
+function healthChecker() {
+    if (currentHealth >= 3) {
+        popHealth("Healthy");
+        currentHealth = 3;
+    } else if (currentHealth == 2) {
+        popHealth("Injured");
+    } else if (currentHealth == 1) {
+        popHealth("Wounded");
+    } else if (currentHealth <= 0) {
+        popHealth("Dead");
+        // gonna have to put in whatever pgnumber it is with the appropriate death
+        if (myPage.death != undefined) {
+            popGame(!myPage?.death);
+        } else {
+            // generic death page
+            popGame(8);
+        }
+    }
+}
+
+function oxygenChecker() {
+    if (currentO2 <= 0) {
+        popHealth("Dead");
+        popOxygen("Empty");
+        // death from lack of air
+        popGame(9);
+    }
+}
+
+function deathChecker(pgNum) {
+    if (specialDeaths.includes(pgNum) === true) {
+        popHealth("Dead");
+        popOxygen("Empty");
+    }
 }
 
 function main() {
