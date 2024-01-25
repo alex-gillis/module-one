@@ -62,20 +62,6 @@ function onError() {
     console.log("*** Error has occured during fetch");
 }
 
-function pushKey(reqPage, myKey) {
-    document.addEventListener("keydown", (e) => {
-        console.log("key down " + e.key);
-        console.log("req key " + myKey);
-        if (e.key === myKey) {
-            e.preventDefault();
-
-            popGame(reqPage);
-
-            return false;
-        }
-    });
-}
-
 function startGame(pgNum) {
     // the startGame function requires a pgNum (page number)
     // to populate the story from the spot in the JSON array
@@ -114,16 +100,11 @@ function checkLoad() {
 
 function popGame(pgNum) {
     myPage = myPages[pgNum]; 
-    // console.log('---page print out---', myPage)
     myStory.innerHTML = "";
     myStory.innerHTML = myPage.story;
     myChoices.innerHTML = "";
     for (const myChoice of myPage.choices) {
-        // console.log('---choice loop---', myChoice)
-        myChoices.innerHTML += `<button class="choices" onclick="popGame(${myChoice.nextPage})">${myChoice.option}</button><br>`
-        
-        // // add keyboard functionality
-        // pushKey(myChoice.nextPage, myChoice.key);
+        myChoices.innerHTML += `<button class="choices" onclick="popGame(${myChoice.nextPage})">${myChoice.option}</button><br>`;
     }
 
     // checking for restart to wipe the trail
@@ -140,7 +121,7 @@ function popGame(pgNum) {
 
     // setting vitals
     currentHealth = myPage.vitals + currentHealth;
-    popHealth(currentHealth);
+    popHealth(currentHealth );
     healthChecker();
 
     // filling oxygen 

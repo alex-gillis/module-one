@@ -496,6 +496,19 @@
           "nextPage": 34
         }
       ]
+    },
+    {
+      "pageNum": 33,
+      "vitals": 0,
+      "oxygen": -1,
+      "profit": 0,
+      "story": "Blasting the retro-rockets at full speed in reverse, you make a daring move. Instead of angling towards the hangar's opening back into space, you head straight up towards the ceiling. Through the front viewport, you witness the drone pulling up and detaching a panel from the hull of your freighter. It's unclear whether the singularity thinks this is the quickest route to you or if it's simply too absorbed in its single-minded mission of acquiring more tech.<br><br>As you accelerate towards the ceiling, nearly destined to join the other ship lodged nose-first, you execute a last-minute turn. The top end of your freighter's nose slams into the ceiling with a resounding thud, eliciting a protest from your ship's frame. With the reverse thrusters still engaged, your ship's nose briefly scrapes along the ceiling as you back away.<br><br>In the spot where the singularity was once tearing into your hull, there's now nothing but the remnants of what appears to be the junk droid. Reduced to nothing more than scrap. If you hadn't just flattened it, that could have been a valuable find, fetching a handsome sum if you managed to keep it long enough to locate a buyer.<br><br>But for now... you've survived this particular threat, allowing you to heave a sigh of relief.",
+      "choices": [
+        {
+          "option": "Proceed",
+          "nextPage": 35
+        }
+      ]
     }
   ]
 }

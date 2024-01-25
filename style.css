@@ -1,5 +1,5 @@
 html {
-    height: 100%;
+    height: 100vh;
     background-color: #050505;
     color: #00AD00;
     font-family: "Terminal", sans-serif;
@@ -7,12 +7,13 @@ html {
     text-align: center; }
 
 body {
-    height: 91.25%;
+    height: 100vh;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     flex-wrap: wrap;
-    align-items: stretch; }
+    align-items: stretch;
+}
     
 .title {
     display: flex;
@@ -73,9 +74,9 @@ body {
     position: fixed;
     align-items: flex-end; }
 .menu__settings {
-    height: 35%; }
+    height: 40%; }
 .menu__stats {
-    height: 50%; }
+    height: 45%; }
 .menu__links {
     height: 2%; }
 
@@ -124,9 +125,21 @@ a:visited {
 }
 
 .reference { 
-    height: 100%;
-    width: 35%;
+    height: 100vh;
     max-width: 405px;
+}
+
+.image_ref {
+    width: 30%;
+    position: relative;
+    height: 100vh;
+    background: url(../images/station.jpg) center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    color: #fff;
 }
 
 @media only screen and (max-width: 1240px) {
