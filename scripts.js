@@ -1,7 +1,7 @@
 // the path to retrieve the JSON
 const storyJSON = './moduleOne.json';
 // tracks if player has stumbled across special deaths
-const specialDeaths = [27, 29];
+const specialDeaths = [27, 29, 33];
 // referring to HTML objects associated with the storyline
 let myPages, myChoices, myStory;
 // referring to HTML objects associated with the character
