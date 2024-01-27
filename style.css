@@ -13,6 +13,7 @@ body {
     justify-content: flex-start;
     flex-wrap: wrap;
     align-items: stretch;
+    margin: 0;
 }
     
 .title {
@@ -72,7 +73,8 @@ body {
     justify-content: flex-end;
     flex-direction: column;
     position: fixed;
-    align-items: flex-end; }
+    align-items: flex-end;
+    padding-top: 10px; }
 .menu__settings {
     height: 40%; }
 .menu__stats {
@@ -107,7 +109,7 @@ a:visited {
     display: none;
     visibility: hidden;
     width: 300px;
-    background-color: black;
+    background-color: #050505;
     color: #fff;
     text-align: center;
     border-radius: 6px;
@@ -116,7 +118,7 @@ a:visited {
     position: absolute;
     z-index: 1;
     top: -5px;
-    right: 105%;
+    left: 105%;
 }
 
 .tooltip:hover .tooltiptext {

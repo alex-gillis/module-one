@@ -2,6 +2,8 @@
 const storyJSON = './moduleOne.json';
 // tracks if player has stumbled across special deaths
 const specialDeaths = [27, 29, 33];
+// this gives an alternate page depending on the player's actions 
+const altPages = [35];
 // referring to HTML objects associated with the storyline
 let myPages, myChoices, myStory;
 // referring to HTML objects associated with the character
@@ -129,15 +131,18 @@ function popGame(pgNum) {
     popOxygen(currentO2 + "%");
     oxygenChecker();
 
+    // keeping track of where the player has been
+    playersTrail.push(pgNum);
+    // console.log("Where the player has been...  " + playersTrail);
+
     // deathChecker checks for custom deaths
     deathChecker(pgNum);
 
     // checking for specific circumsances for special ending varients
-    specialChecker();
+    specialChecker(pgNum);
 
-    // keeping track of where the player has been
-    playersTrail.push(pgNum);
-    // console.log("Where the player has been...  " + playersTrail);
+    // checks if the player needs an alternate page
+    altChecker(pgNum);
 
     checkLoad();
     popFeedback("");
@@ -258,11 +263,18 @@ function deathChecker(pgNum) {
     }
 }
 
-function specialChecker() {
-    if (playersTrail.includes(22) || playersTrail.includes(31)) {
+function specialChecker(pgNum) {
+    if (pgNum === 22 || pgNum === 31) {
         hasKraken = true;
-    } else if (playersTrail.includes(25) || playersTrail.includes(30)) {
+    } else if (pgNum === 25 || pgNum === 30) {
         hasKraken = false;
+    }
+}
+
+function altChecker(pgNum) {
+    if (altPages.includes(pgNum) && hasKraken) {
+        playersTrail.pop();
+        popGame(36);
     }
 }
 

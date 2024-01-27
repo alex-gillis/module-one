@@ -459,7 +459,7 @@
         },
         {
           "option": "Dash deeper into the station",
-          "nextPage": 33
+          "nextPage": 37
         }
       ]
     },
@@ -476,23 +476,23 @@
         },
         {
           "option": "Dash deeper into the station",
-          "nextPage": 35
+          "nextPage": 37
         }
       ]
     },
     {
       "pageNum": 32,
       "vitals": 0,
-      "oxygen": -5.3,
+      "oxygen": -5.2,
       "profit": 0,
       "story": "With the Frankenstein bot hot on your heels, you sprint back towards your freighter.<br><br>Though hauling salvage in zero-g isn't exactly the best workout for building muscle, your endurance and agility are anything but lacking. Activating your helmet's night vision, you dive forward, utilizing the jump juice to propel yourself through the halls at an accelerated speed. The urgent, rhythmic stabs into the metal flooring behind you signal the relentless pursuit of the droid.<br><br>Upon reaching the hangar, surrounded by the wreckage of destroyed ships, you quickly contact V.I. through your comm system, instructing her to open the entrance ramp. A brief glance over your shoulder reveals the relentless droid, scaling the hangar wall in a desperate attempt to reach your ship. It seems to have realized your destination and is determined to leap onto the vessel.<br><br>Fortunately, this pursuit gives you a window to reach the ramp. You hope that the ship's hull will serve as a protective barrier between you and the cannibalistic droid. The moment you settle into the pilot's seat, you engage the retrothrusters to reverse out of the hangar.<br><br>Regrettably, through the front viewing screen, you can only watch as the droid leaps and lands just before you. Its red glowing eye focuses on you, seemingly delighted at the prospect of fresh working electronics.<br><br>The urgency is clear – you need to get it off. NOW.",
       "choices": [
         {
           "option": "Try to shake it off",
-          "nextPage": 34
-        },{
-          "option": "Try to scrap it off",
           "nextPage": 33
+        },{
+          "option": "Try to scrape it off",
+          "nextPage": 34
         }
       ]
     },
@@ -514,11 +514,37 @@
       "vitals": 0,
       "oxygen": -1,
       "profit": 0,
-      "story": "Blasting the retro-rockets at full speed in reverse, you make a daring move. Instead of angling towards the hangar's opening back into space, you head straight up towards the ceiling. Through the front viewport, you witness the drone pulling up and detaching a panel from the hull of your freighter. It's unclear whether the singularity thinks this is the quickest route to you or if it's simply too absorbed in its single-minded mission of acquiring more tech.<br><br>As you accelerate towards the ceiling, nearly destined to join the other ship lodged nose-first, you execute a last-minute turn. The top end of your freighter's nose slams into the ceiling with a resounding thud, eliciting a protest from your ship's frame. With the reverse thrusters still engaged, your ship's nose briefly scrapes along the ceiling as you back away.<br><br>In the spot where the singularity was once tearing into your hull, there's now nothing but the remnants of what appears to be the junk droid. Reduced to nothing more than scrap. If you hadn't just flattened it, that could have been a valuable find, fetching a handsome sum if you managed to keep it long enough to locate a buyer.<br><br>But for now... you've survived this particular threat, allowing you to heave a sigh of relief.",
+      "story": "Blasting the <div class='tooltip'>retro-rockets<span class='tooltiptext'>retro-rockets are the rockets usually used for reverse thrust or slowing the descent to a planet's surface.</span></div> at full speed in reverse, you make a daring move. Instead of angling towards the hangar's opening back into space, you head straight up towards the ceiling. Through the front viewport, you witness the drone pulling up and detaching a panel from the hull of your freighter. It's unclear whether the singularity thinks this is the quickest route to you or if it's simply too absorbed in its single-minded mission of acquiring more tech. <br><br>As you accelerate towards the ceiling, nearly destined to join the other ship lodged nose-first, you execute a last-minute turn. The top end of your freighter's nose slams into the ceiling with a resounding thud, eliciting a protest from your ship's frame. With the reverse thrusters still engaged, your ship's nose briefly scrapes along the ceiling as you back away. <br><br>In the spot where the singularity was once tearing into your hull, there's now nothing but the remnants of what appears to be the junk droid. Reduced to nothing more than scrap. If you hadn't just flattened it, that could have been a valuable find, fetching a handsome sum if you managed to keep it long enough to locate a buyer. <br><br>But for now... you've survived this particular threat, allowing you to heave a sigh of relief.",
       "choices": [
         {
           "option": "Proceed",
           "nextPage": 35
+        }
+      ]
+    },
+    {
+      "pageNum": 35,
+      "vitals": 0,
+      "oxygen": 0,
+      "profit": 0,
+      "story": "With a sense of relief mixed with lingering dread, you complete your retreat from the station, opting not to delve back into its ominous depths to uncover more horrors. As you ponder what could have caused the station's chaotic state, you push the thought aside, focusing instead on your immediate concerns. <br><br> Despite the harrowing encounter and the uncertainties of the station's fate, you find solace in the small haul you managed to salvage. It may not be much, but it should buy you some time with the loan sharks, sparing your limbs from the threat of being mangled by an alien with a pipe wrench for at least another week. <br><br> With a heavy but grateful heart, you set course for the nearest port, eager to offload your salvage and collect whatever credits you can to keep your creditors at bay. As the stars streak by outside your viewport, you can't help but wonder what other challenges and dangers await you in the vast expanse of space. But for now, you're just grateful to have escaped with your life, however precarious it may be.",
+      "choices": [
+        {
+          "option": "Thanks for playing! Want to play again?",
+          "nextPage": 0
+        }
+      ]
+    },
+    {
+      "pageNum": 36,
+      "vitals": 0,
+      "oxygen": 0,
+      "profit": 0,
+      "story": "As you settle back into your seat, a sense of gratitude washes over you for having survived the ordeal. With a weary sigh, you opt to steer clear of the station's ominous depths, prioritizing your safety over any further exploration. As your ship sets course for the nearest port, you can't shake the lingering question of what could have led to the station's demise, but for now, it remains an enigma waiting to be unraveled. <br><br> Turning your attention to the present, you acknowledge that your modest haul will only provide temporary relief from your mounting debts. However, amidst the challenges and uncertainties, you find solace in the companionship of your newfound friend—the astrokraken who bravely stood by your side in the face of danger. Determined to honor its loyalty, you grant it a place of honor on your ship's dashboard, a silent sentinel gazing out at the vast expanse of space. <br><br> With the astrokraken by your side and a glimmer of hope in your heart, you set your sights on the future, trusting that somehow, things will work out in the end.",
+      "choices": [
+        {
+          "option": "Thanks for playing! Want to play again?",
+          "nextPage": 0
         }
       ]
     }
