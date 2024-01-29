@@ -38,8 +38,8 @@
           "nextPage": 3
         },
         {
-          "option": "Find a maintenance hatch",
-          "nextPage": 4
+          "option": "<span style='color:grey;'>Find a maintenance hatch (Path not finished yet)</span>",
+          "nextPage": 2
         },
         {
           "option": "Just leave",
@@ -111,8 +111,7 @@
       "choices": [
         {
           "option": "But don't you want to actually try?",
-          "nextPage": 0, 
-          "key": 1
+          "nextPage": 37
         }
       ]
     },
@@ -342,13 +341,13 @@
     {
       "pageNum": 23,
       "vitals": 0,
-      "oxygen": 0,
-      "profit": 0,
-      "story": "The Booths are not finished yet",
+      "oxygen": -7,
+      "profit": 1350,
+      "story": "With newfound determination, you continue your exploration of the booths. Each one offers a glimpse into the diverse and eclectic wares that were once available in this bustling market. You discover remnants of stores that sold everything from exotic spices to customized space suits. The vacuum-sealed environment has preserved some items surprisingly well.<br><br>One booth catches your eye as you approach it. It seems to have been a specialty store for rare collectibles and artifacts. The kind of place that caters to the more discerning clientele. Your scavenger instincts kick in, and you quickly locate the lockbox tucked away beneath the counter.<br><br>This time, your trusty Space Tool for Extraterrestrial Work (S.T.E.W.) comes in handy. With a swift and precise cut, you manage to pry open the lock and reveal the contents inside. To your delight, you find an assortment of trinkets, small sculptures, and what looks like an antique holographic display.<br><br>As you sift through the loot, you can't help but feel a sense of triumph. The station might be in disarray, but you're turning it into your own treasure trove. It's a small victory, but in the vastness of space, every find counts.<br><br>What will you do next? The market still holds many mysteries and potential discoveries. There are more booths to explore, and who knows what valuable items might be hidden among the remnants of this abandoned station.",
       "choices": [
         {
-          "option": "Want to try again?",
-          "nextPage": 0
+          "option": "Try the Stores",
+          "nextPage": 22
         }
       ]
     },
@@ -544,6 +543,74 @@
       "choices": [
         {
           "option": "Thanks for playing! Want to play again?",
+          "nextPage": 0
+        }
+      ]
+    },
+    {
+      "pageNum": 37,
+      "vitals": 0,
+      "oxygen": 0,
+      "profit": 0,
+      "story": "As you're about to check the condition of the tools on your suit's belt, V.I. alerts you to the closing proximity of your destination. Hyperspace travel has always been a tad more inexact than the techies would like you to believe. Nevertheless, it suited your purpose just fine as you slipped into your EVA suit and returned to the helm.<br><br>As soon as your seat cradled you, you dropped out of hyperspace just outside a debris field. Light from distant stars illuminated the shape of the station. Carefully, you piloted your freighter through the field, wincing at every small clunk of debris bouncing off the hull, too small to avoid. A few bodies amidst the wreckage seemed to have been flash-frozen, but that wasn't too abnormal for something like this.<br><br>Before long, you arrived at the most intact part of the station—the main building block and central core, referred to by shipbuilders and scrappers as module one. The colossal structure, hundreds of feet wide, was built almost in a circular fashion, part of a pillar designed to spin and maintain its position. Your sensors picked up the formerly welcoming sight of the hangar bay, where many travelers must have passed through in its prime. Now, it sat in the shadow of its own destruction, beckoning those who dared to enter its shady depths.<br><br>You've picked up a few instincts in your years of spacing through abandoned hulks of scrap. There are benefits to entering through the hangar—a faster escape, a good look at what you're getting into. The downside is, if security is still online, you might be facing at least a turret ready to shred you the moment you step into its sight.<br><br>And then there's the matter of high-value sites—officers' quarters, shops, and data banks—further inside, requiring more oxygen and time on the station. Even with the hangar approach, wandering too far from the ship is a risk.<br><br>Recalling an old trick your former employer taught you, the straightforward approach isn't the only option. The old maintenance hatches, used by engineers to access internal infrastructure, provide entry practically anywhere on the desired salvaging spot. It's a quick and easy route, but not always the best for a hasty escape. Your former employer met his demise, mauled by a <div class='tooltip'>starshade marauder<span class='tooltiptext'>Closest to the species of predatory cats located back on Earth. With the variance of surviving for extended periods in space, an extra set of legs, and the taste of humanoid spinal fluid.</span></div>, a testament to the risks involved.<br><br>Despite the potential danger, it offers more time to gather loot. As you weigh the pros and cons of each approach, considering the lure of quick rewards against the lurking threats, you make your decision...",
+      "choices": [
+        {
+          "option": "Land in the hanger bay",
+          "nextPage": 3
+        },
+        {
+          "option": "<span style='color:grey;'>Find a maintenance hatch (Path not finished yet)</span>",
+          "nextPage": 2
+        },
+        {
+          "option": "Just leave",
+          "nextPage": 38
+        }
+      ]
+    },
+    {
+      "pageNum": 38,
+      "vitals": 0,
+      "oxygen": 0,
+      "profit": 0,
+      "story": "''<div class='tooltip'>Doints <span class='tooltiptext'>A common practice that ended up being picked up by star pilots and spacers alike is to swear in mathematical terms to cut down on profanity, this one in particular being shorted from ‘’Decimal Point’’</span></div> to this!'' you say to- <br><br> Wait a minute! Are you seriously just going to choose to leave? That's not why we're here! This is our moment to seize the opportunity, to face whatever challenges come our way head-on. We can't just turn tail and run; that's not the spirit of adventure! There's a whole station out there waiting to be explored, mysteries to unravel, dangers to overcome. We're not going to achieve anything by taking the easy way out. So, come on, let's dive back in and embrace the thrill of the unknown. What do you say? Ready to forge ahead and see where this journey takes us?",
+      "choices": [
+        {
+          "option": "You should actually try.",
+          "nextPage": 39
+        }
+      ]
+    },
+    {
+      "pageNum": 39,
+      "vitals": 0,
+      "oxygen": 0,
+      "profit": 0,
+      "story": "As you're about to check the condition of the tools on your suit's belt, V.I. alerts you to the closing proximity of your destination. Hyperspace travel has always been a tad more inexact than the techies would like you to believe. Nevertheless, it suited your purpose just fine as you slipped into your EVA suit and returned to the helm.<br><br>As soon as your seat cradled you, you dropped out of hyperspace just outside a debris field. Light from distant stars illuminated the shape of the station. Carefully, you piloted your freighter through the field, wincing at every small clunk of debris bouncing off the hull, too small to avoid. A few bodies amidst the wreckage seemed to have been flash-frozen, but that wasn't too abnormal for something like this.<br><br>Before long, you arrived at the most intact part of the station—the main building block and central core, referred to by shipbuilders and scrappers as module one. The colossal structure, hundreds of feet wide, was built almost in a circular fashion, part of a pillar designed to spin and maintain its position. Your sensors picked up the formerly welcoming sight of the hangar bay, where many travelers must have passed through in its prime. Now, it sat in the shadow of its own destruction, beckoning those who dared to enter its shady depths.<br><br>You've picked up a few instincts in your years of spacing through abandoned hulks of scrap. There are benefits to entering through the hangar—a faster escape, a good look at what you're getting into. The downside is, if security is still online, you might be facing at least a turret ready to shred you the moment you step into its sight.<br><br>And then there's the matter of high-value sites—officers' quarters, shops, and data banks—further inside, requiring more oxygen and time on the station. Even with the hangar approach, wandering too far from the ship is a risk.<br><br>Recalling an old trick your former employer taught you, the straightforward approach isn't the only option. The old maintenance hatches, used by engineers to access internal infrastructure, provide entry practically anywhere on the desired salvaging spot. It's a quick and easy route, but not always the best for a hasty escape. Your former employer met his demise, mauled by a <div class='tooltip'>starshade marauder<span class='tooltiptext'>Closest to the species of predatory cats located back on Earth. With the variance of surviving for extended periods in space, an extra set of legs, and the taste of humanoid spinal fluid.</span></div>, a testament to the risks involved.<br><br>Despite the potential danger, it offers more time to gather loot. As you weigh the pros and cons of each approach, considering the lure of quick rewards against the lurking threats, you make your decision...",
+      "choices": [
+        {
+          "option": "Land in the hanger bay",
+          "nextPage": 3
+        },
+        {
+          "option": "<span style='color:grey;'>Find a maintenance hatch (Path not finished yet)</span>",
+          "nextPage": 2
+        },
+        {
+          "option": "<span style='color:grey;'>Just leave </span><span style='color:#FF6161;'>(I FORBID IT)</span>",
+          "nextPage": 39
+        }
+      ]
+    },
+    {
+      "pageNum": 40,
+      "vitals": 0,
+      "oxygen": 0,
+      "profit": 0,
+      "story": "As you sprint down into the unknown depths of the station, desperation driving every step, you hope against hope to find some semblance of salvation in the dark corridors. Perhaps a functioning security system or a blastproof door that could shield you from your relentless pursuers.<br><br>But hope quickly turns to dread as you pass by the husks of torn-apart turrets, realizing with a sinking feeling that the robotics store wasn't merely looted by the mechanical monstrosity—it was its lair. A grim realization settles over you as you realize you've plunged deeper into the heart of danger.<br><br>Suddenly, your already dire situation takes a horrifying turn as a new threat emerges from the darkness ahead. A wholly organic creature, a moving mass of meat that assembles itself into a quadripedal form, muscles extending to grip the walls and ceiling, blocking any hope of escape.<br><br>Trapped between the mechanical horror behind you and the fleshy nightmare before you, you're frozen with fear as your next moments descend into agony. The creatures pay no heed to each other, focused solely on their own desires, while you become their unwitting victim.<br><br>Your suit offers little protection as it's torn apart, leaving you exposed to the freezing vacuum of space for a brief, chilling moment before the organic monstrosity envelops you. At first, its embrace feels almost comforting, but any semblance of hope is swiftly crushed as it begins to digest you, integrating your bones into its flesh with horrifying efficiency.<br><br>In your final moments, you can only lament the cruel fate that led you to this grisly end, a mere plaything for the horrors lurking within the depths of the abandoned station.",
+      "choices": [
+        {
+          "option": "Want to try again?",
           "nextPage": 0
         }
       ]

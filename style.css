@@ -50,7 +50,7 @@ body {
     width: 225px;
     flex: 9 1 auto;
     text-align: left;
-    padding-top: 10px;
+    padding-top: 5px;
     padding-right: 10px;
     margin-left: 18%;
 }
@@ -74,7 +74,7 @@ body {
     flex-direction: column;
     position: fixed;
     align-items: flex-end;
-    padding-top: 10px; }
+    padding-top: 5px; }
 .menu__settings {
     height: 40%; }
 .menu__stats {

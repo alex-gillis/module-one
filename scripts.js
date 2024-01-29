@@ -1,7 +1,7 @@
 // the path to retrieve the JSON
 const storyJSON = './moduleOne.json';
 // tracks if player has stumbled across special deaths
-const specialDeaths = [27, 29, 33];
+const specialDeaths = [27, 29, 33, 40];
 // this gives an alternate page depending on the player's actions 
 const altPages = [35];
 // referring to HTML objects associated with the storyline
