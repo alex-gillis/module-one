@@ -19,5 +19,7 @@ Continuing the Exploration of the Station: While the current release of the game
 
 Changing Images: Enhance the appearance of the game by adding dynamically changing images that reflect the scenes and atmosphere, further immersing players in the adventure.
 
+Go Back: Reverting back a move to the previous page. 
+
 #### Ready to Launch?
 Find yourself in the vast reaches of space the fastest by clicking [Here](https://alex-gillis.github.io/module-one/)
