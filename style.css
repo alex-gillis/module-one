@@ -163,6 +163,7 @@ a:visited {
     .journal {
         padding-left: 70px;
     }
+    .image_ref { display:none; }
 } 
 @media only screen and (max-width: 900px) {
     .journal {
@@ -183,6 +184,7 @@ a:visited {
     .journal {
         padding-left: 125px;
     }
+    .image_ref { display:none; }
 }
 @media only screen and (max-width: 685px) {
     .journal {
@@ -209,6 +211,8 @@ a:visited {
     .menu { display: none; }
 
     .reference { display: none; }
+
+    .image_ref { display:none; }
 
     .journal {
         width: 225px;
