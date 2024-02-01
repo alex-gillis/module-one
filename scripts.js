@@ -43,7 +43,7 @@ function getJSONData(retrieveScript, success, failure) {
             success(jsonData);
         })
         .catch(function(err) {
-            console.log(err);
+            // console.log(err);
             failure();
         });
 
