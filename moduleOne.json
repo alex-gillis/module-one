@@ -38,7 +38,7 @@
           "nextPage": 3
         },
         {
-          "option": "<span style='color:grey;'>Find a maintenance hatch (Path not finished yet)</span>",
+          "option": "<span style='color:grey; cursor: auto;'>Find a maintenance hatch (Path not finished yet)</span>",
           "nextPage": 2
         },
         {
@@ -559,7 +559,7 @@
           "nextPage": 3
         },
         {
-          "option": "<span style='color:grey;'>Find a maintenance hatch (Path not finished yet)</span>",
+          "option": "<span style='color:grey; cursor: auto;'>Find a maintenance hatch (Path not finished yet)</span>",
           "nextPage": 2
         },
         {
@@ -593,11 +593,11 @@
           "nextPage": 3
         },
         {
-          "option": "<span style='color:grey;'>Find a maintenance hatch (Path not finished yet)</span>",
+          "option": "<span style='color:grey; cursor: auto;'>Find a maintenance hatch (Path not finished yet)</span>",
           "nextPage": 2
         },
         {
-          "option": "<span style='color:grey;'>Just leave </span><span style='color:#FF6161;'>(I FORBID IT)</span>",
+          "option": "<span style='color:grey; cursor: auto;'>Just leave <span style='color:#FF6161;'>(I FORBID IT)</span></span>",
           "nextPage": 39
         }
       ]
