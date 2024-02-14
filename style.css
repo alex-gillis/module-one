@@ -138,7 +138,7 @@ a:visited {
     width: 30%;
     position: relative;
     height: 100vh;
-    background: url(../images/station.jpg) center center;
+    background: url(./images/station.jpg) center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     -webkit-background-size: cover;
