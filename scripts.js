@@ -15,7 +15,7 @@ let mySave, myLoad, myFeedback;
 // referring to HTML objects associated with the settings for mobile
 let myMobileSave, myMobileLoad, myMobileFeedback;
 // referring to HTML objects associated with the settings
-let myTitle;
+let myTitle, myBackground;
 // referring to storage page
 let myPage;
 
@@ -143,6 +143,9 @@ function popGame(pgNum) {
 
     // checks if the player needs an alternate page
     altChecker(pgNum);
+
+    // this will blur the background image to make text easier to read
+    myBackground.style.backdropFilter = "blur(1.5px)"
 
     checkLoad();
     popFeedback("");
@@ -281,6 +284,7 @@ function altChecker(pgNum) {
 function main() {
     // connecting HTML content to be populated through functions 
     myTitle          = document.getElementById("title");
+    myBackground     = document.getElementById("filter");
 
     myChoices        = document.getElementById("choices");
     myStory          = document.getElementById("story");

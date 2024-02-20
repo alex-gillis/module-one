@@ -24,6 +24,10 @@ body {
     align-items: stretch;
     margin: 0;
 }
+
+.filter {
+    backdrop-filter: blur(0);
+}
     
 .title {
     display: flex;
@@ -67,11 +71,12 @@ body {
     padding-right: 10px;
     padding-left: 20px;
     margin-left: 250px;
+    font-size: 24px;
 }
 
 .choices {
     color: goldenrod;
-    font-size: 20px;
+    font-size: 24px;
     text-align: left;
     border: none;
     background-color: transparent;
@@ -85,12 +90,12 @@ body {
     width: 250px;
     flex: 1 1 auto;
     color: #c1cfe3;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
     justify-content: flex-end;
     flex-direction: column;
     position: fixed;
     align-items: flex-end;
-    padding-top: 5px;
-    backdrop-filter: blur(3px); }
+    padding-top: 5px; }
 .menu__settings {
     height: 40%; }
 .menu__stats {
@@ -119,7 +124,8 @@ a:visited {
     position: relative;
     display: inline-block;
     color:aqua;
-    border-bottom: 1px dotted aqua;
+    border-bottom: 1.25px dotted white;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
 }
 
 .tooltip .tooltiptext {
