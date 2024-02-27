@@ -31,9 +31,16 @@ body {
     
 .title {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.title__title {
     padding-top: 25px;
+    text-align: center;
+    font-size: 45px; 
 }
 
 .title__button {
@@ -46,6 +53,7 @@ body {
     padding-left: 40px;
     padding-right: 40px;
     cursor: pointer;
+    flex-shrink: 1;
 }
 
 .settings {
@@ -188,6 +196,8 @@ a:visited {
     .hud { display: none; }
 
     .title__button { font-size: 18px;}
+
+    .title__title { font-size: 30px; }
 
     .mobile_hud {
         position: fixed;

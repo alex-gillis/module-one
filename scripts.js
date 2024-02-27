@@ -80,11 +80,13 @@ function hasExistingGame() {
     // depending if there is a game file saved in localStorage
     // the title screen will have a "Load Game" button
 
+    myTitle.innerHTML = `<h1 class="title__title">Scavenging Module One</h1><br>`;
+
     if (!localStorage.getItem("playerHistory")) {
-        myTitle.innerHTML = `<button class="title__button" onclick="startGame(0)"><h2>Start Game</h2></button>`
+        myTitle.innerHTML += `<button class="title__button" onclick="startGame(0)"><h2>Start Game</h2></button>`
     } else {
-        myTitle.innerHTML = `<button class="title__button" onclick="startGame(0)"><h2>Start New Game</h2></button>
-        <button class="title__button" onclick="loadGame()"><h2>Continue Game</h2></button>`
+        myTitle.innerHTML += `<p class="title__button"><button class="title__button" onclick="startGame(0)"><h2>Start New Game</h2></button>
+        <button class="title__button" onclick="loadGame()"><h2>Continue Game</h2></button></p>`
     }
 }
 
